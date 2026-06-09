@@ -1,7 +1,5 @@
 """
-STEP 4: Visualize Everything
-==============================
-Generates a set of clear, publication-quality charts saved as PNGs.
+Visualize
 
 Charts produced (all saved to output/charts/):
   1. campus_trend.png          – historical campus CO2 by year
@@ -26,7 +24,6 @@ INPUT_DIR  = "output"
 CHART_DIR  = os.path.join("output", "charts")
 os.makedirs(CHART_DIR, exist_ok=True)
 
-# ── Consistent style across all charts ────────────────────────────────────────
 BLUE   = "#3266AD"
 ORANGE = "#E07B39"
 GREEN  = "#3B9E60"
@@ -60,9 +57,8 @@ def load(filename):
     return pd.read_csv(os.path.join(INPUT_DIR, filename))
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 1: Historical campus CO2 trend
-# ══════════════════════════════════════════════════════════════════════════════
+
+# Historical campus CO2 trend
 
 def chart_campus_trend(campus_df):
     df = campus_df.sort_values("year")
@@ -104,10 +100,7 @@ def chart_campus_trend(campus_df):
     plt.tight_layout()
     save("campus_trend.png")
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 2: Electricity vs gas CO2 stacked area
-# ══════════════════════════════════════════════════════════════════════════════
+# Electricity vs gas CO2 stacked area
 
 def chart_elec_vs_gas(campus_df):
     df = campus_df.sort_values("year")
@@ -135,9 +128,9 @@ def chart_elec_vs_gas(campus_df):
     save("elec_vs_gas.png")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 3: Top 15 buildings by 2023 CO2
-# ══════════════════════════════════════════════════════════════════════════════
+
+# Top 15 buildings by 2023 CO2
+
 
 def chart_top_buildings(snapshot_df, n=15):
     df = snapshot_df.nlargest(n, "total_co2_mt").sort_values("total_co2_mt")
@@ -166,9 +159,7 @@ def chart_top_buildings(snapshot_df, n=15):
     save("top_buildings_2023.png")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 4: Pie chart — share of total campus CO2 (top buildings + other)
-# ══════════════════════════════════════════════════════════════════════════════
+# Pie chart
 
 def chart_co2_pie(snapshot_df, n=8):
     df = snapshot_df[snapshot_df["total_co2_mt"] > 0].copy()
@@ -199,9 +190,8 @@ def chart_co2_pie(snapshot_df, n=8):
     save("building_breakdown.png")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 5: Predictions — historical + 3 forecast models
-# ══════════════════════════════════════════════════════════════════════════════
+
+# Predictions — historical + 3 forecast models
 
 def chart_predictions(campus_df, pred_df):
     hist = campus_df.sort_values("year")
@@ -248,10 +238,8 @@ def chart_predictions(campus_df, pred_df):
     plt.tight_layout()
     save("predictions.png")
 
+# Energy Use Intensity distribution
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 6: Energy Use Intensity distribution
-# ══════════════════════════════════════════════════════════════════════════════
 
 def chart_eui(snapshot_df):
     df = snapshot_df.dropna(subset=["eui_kbtu_per_sqft"]).copy()
@@ -279,9 +267,8 @@ def chart_eui(snapshot_df):
     save("eui_distribution.png")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CHART 7: CO2 by building use type
-# ══════════════════════════════════════════════════════════════════════════════
+# CO2 by building use type
+
 
 def chart_by_use_type(snapshot_df):
     df = snapshot_df[snapshot_df["total_co2_mt"] > 0].copy()
@@ -327,9 +314,7 @@ def chart_by_use_type(snapshot_df):
     save("co2_by_use_type.png")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
 # MAIN
-# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
 
@@ -346,6 +331,3 @@ if __name__ == "__main__":
     chart_predictions(campus_df, pred_df)
     chart_eui(snapshot_df)
     chart_by_use_type(snapshot_df)
-
-    print(f"\nAll charts saved to {CHART_DIR}/")
-    print("Step 4 complete — your project is done!")
