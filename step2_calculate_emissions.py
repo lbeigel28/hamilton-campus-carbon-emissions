@@ -1,7 +1,7 @@
 """
-STEP 2: Calculate Carbon Emissions
-====================================
-Reads the clean CSVs from Step 1 and applies EPA emission factors
+Calculate Carbon Emissions
+
+Reads the clean CSVs and applies EPA emission factors
 to calculate CO2 (metric tons) for each building and for the campus.
 
 Emission factors used:
@@ -31,8 +31,8 @@ import pandas as pd
 import numpy as np
 import os
 
-# ── Emission factors ──────────────────────────────────────────────────────────
-# Change these here if you want to model a different grid or fuel type.
+# Emission factors
+# Changeif you want to model a different grid or fuel type.
 
 ELEC_EF_MT_PER_KWH  = 0.000201   # MT CO2 per kWh  (NY grid, EPA eGRID 2022)
 GAS_EF_MT_PER_CUFT  = 0.0000530  # MT CO2 per cu ft of natural gas
@@ -47,9 +47,7 @@ def load_csv(filename):
     return pd.read_csv(path)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# CALCULATION FUNCTIONS
-# ══════════════════════════════════════════════════════════════════════════════
+# calc functions
 
 def add_emissions(df):
     """
@@ -114,13 +112,11 @@ def add_co2_per_sqft(df):
     return df
 
 
-# ══════════════════════════════════════════════════════════════════════════════
 # MAIN
-# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
 
-    # ── Load inputs ───────────────────────────────────────────────────────────
+    # load
     buildings_df  = load_csv("buildings_energy.csv")
     campus_df     = load_csv("campus_totals.csv")
     snapshot_2023 = load_csv("buildings_2023.csv")
@@ -129,14 +125,14 @@ if __name__ == "__main__":
     print(f"  Electricity : {ELEC_EF_MT_PER_KWH} MT CO2 / kWh")
     print(f"  Natural gas : {GAS_EF_MT_PER_CUFT} MT CO2 / cu ft")
 
-    # ── Apply emissions to all three tables ───────────────────────────────────
+    # apply
     buildings_emissions  = add_emissions(buildings_df)
     campus_emissions     = add_emissions(campus_df)
     snapshot_emissions   = add_emissions(snapshot_2023)
     snapshot_emissions   = add_eui(snapshot_emissions)
     snapshot_emissions   = add_co2_per_sqft(snapshot_emissions)
 
-    # ── Save outputs ──────────────────────────────────────────────────────────
+    # save
     out1 = os.path.join(OUTPUT_DIR, "buildings_emissions.csv")
     out2 = os.path.join(OUTPUT_DIR, "campus_emissions.csv")
     out3 = os.path.join(OUTPUT_DIR, "buildings_2023_emissions.csv")
@@ -149,7 +145,7 @@ if __name__ == "__main__":
     print(f"✓ Saved: {out2}")
     print(f"✓ Saved: {out3}")
 
-    # ── Print summary stats ───────────────────────────────────────────────────
+    # print
     print("\n── Campus emissions by year (all years) ──")
     display_cols = ["year", "kwh", "gas_cuft", "elec_co2_mt", "gas_co2_mt", "total_co2_mt"]
     print(campus_emissions[display_cols].to_string(index=False))
@@ -175,4 +171,4 @@ if __name__ == "__main__":
     if len(total_2023):
         print(f"\n── 2023 campus total: {total_2023[0]:,.1f} MT CO2 ──")
 
-    print("\nStep 2 complete. Run step3_predict.py next.")
+  
