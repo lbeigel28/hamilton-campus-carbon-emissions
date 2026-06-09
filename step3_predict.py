@@ -1,6 +1,6 @@
 """
-STEP 3: Predict Future Carbon Emissions
-=========================================
+Predict future emissions
+
 Reads campus_emissions.csv and builds three forecasting models:
 
   1. Linear regression     – simple trend extrapolation
@@ -16,8 +16,6 @@ Outputs:
 
 Run:
   python step3_predict.py
-
-Then open the CSV in Excel or use step4_visualize.py to plot.
 """
 
 import pandas as pd
@@ -29,7 +27,7 @@ import os
 INPUT_DIR  = "output"
 OUTPUT_DIR = "output"
 
-# ── Scenario parameters (edit these to model different futures) ───────────────
+# senario parameters
 SCENARIO = {
     # How much cleaner does NY electricity get by 2030?
     # NY's Climate Leadership Act targets 70% renewable by 2030.
@@ -56,9 +54,7 @@ PREDICT_YEARS = list(range(2026, 2041))
 REGRESSION_YEARS_FROM = 2014
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# MODEL 1: Linear Regression
-# ══════════════════════════════════════════════════════════════════════════════
+# linear regression
 
 def linear_regression_model(campus_df):
     """
@@ -87,9 +83,7 @@ def linear_regression_model(campus_df):
     return predictions.tolist(), slope, intercept, r2
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# MODEL 2: Exponential Decay
-# ══════════════════════════════════════════════════════════════════════════════
+# exponetial decay
 
 def exponential_decay_model(campus_df):
     """
@@ -120,9 +114,7 @@ def exponential_decay_model(campus_df):
     return predictions, annual_rate_pct, r2
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# MODEL 3: Policy Scenario
-# ══════════════════════════════════════════════════════════════════════════════
+# policy senario
 
 def scenario_model(campus_df, scenario=SCENARIO):
     """
@@ -154,7 +146,7 @@ def scenario_model(campus_df, scenario=SCENARIO):
     for yr in PREDICT_YEARS:
         yrs_since_2023 = yr - 2023
 
-        # ── Electricity side ──────────────────────────────────────────────────
+        # electricty side
         # Efficiency reduces kWh year over year
         kwh = kwh_2023 * ((1 - annual_eff) ** yrs_since_2023)
 
@@ -168,7 +160,7 @@ def scenario_model(campus_df, scenario=SCENARIO):
 
         elec_co2 = kwh * ef_elec
 
-        # ── Gas side ──────────────────────────────────────────────────────────
+        # gas side
         gas_cuft = gas_cuft_2023 * ((1 - annual_gas_reduction) ** yrs_since_2023)
         gas_co2  = gas_cuft * GAS_EF
 
@@ -178,18 +170,16 @@ def scenario_model(campus_df, scenario=SCENARIO):
     return predictions
 
 
-# ══════════════════════════════════════════════════════════════════════════════
 # MAIN
-# ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
 
-    # ── Load data ─────────────────────────────────────────────────────────────
+    # load data
     campus_path = os.path.join(INPUT_DIR, "campus_emissions.csv")
     print(f"Reading {campus_path}")
     campus_df = pd.read_csv(campus_path)
 
-    # ── Run models ────────────────────────────────────────────────────────────
+    # run models
     print("\nFitting models...")
 
     linear_preds, slope, intercept, linear_r2 = linear_regression_model(campus_df)
@@ -201,7 +191,7 @@ if __name__ == "__main__":
     scenario_preds = scenario_model(campus_df, SCENARIO)
     print(f"  Scenario model     (see SCENARIO dict for assumptions)")
 
-    # ── Build predictions table ───────────────────────────────────────────────
+    # tabels
     predictions_df = pd.DataFrame({
         "year":                   PREDICT_YEARS,
         "linear_co2_mt":          [round(v, 1) for v in linear_preds],
@@ -209,7 +199,6 @@ if __name__ == "__main__":
         "scenario_co2_mt":        scenario_preds,
     })
 
-    # ── Also append historical so everything is in one file ───────────────────
     historical = campus_df[["year", "total_co2_mt"]].copy()
     historical.columns = ["year", "actual_co2_mt"]
 
@@ -217,7 +206,6 @@ if __name__ == "__main__":
     predictions_df.to_csv(out_path, index=False)
     print(f"\n✓ Saved predictions: {out_path}")
 
-    # ── Model summary text file ───────────────────────────────────────────────
     summary_lines = [
         "Hamilton College Carbon Emissions — Model Summary",
         "=" * 55,
@@ -260,7 +248,7 @@ if __name__ == "__main__":
         f.write("\n".join(summary_lines))
     print(f"✓ Saved model summary: {summary_path}")
 
-    # ── Print predictions table ───────────────────────────────────────────────
+    # print
     print("\n── Predictions 2026–2040 ──")
     print(predictions_df.to_string(index=False))
 
