@@ -252,4 +252,4 @@ if __name__ == "__main__":
     print("\n── Predictions 2026–2040 ──")
     print(predictions_df.to_string(index=False))
 
-    print("\nStep 3 complete. Run step4_visualize.py to generate all charts.")
+
