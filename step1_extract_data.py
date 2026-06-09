@@ -1,6 +1,6 @@
 """
-STEP 1: Extract & Clean Energy Data
--------------------------------------------
+Extract & Clean Energy Data
+
 Reads the two Hamilton College spreadsheets and produces a clean
 CSV for each: one with per-building annual energy data, one with
 campus-wide totals per year.
