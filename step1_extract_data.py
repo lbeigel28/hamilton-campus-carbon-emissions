@@ -254,4 +254,3 @@ if __name__ == "__main__":
     top5 = snapshot_2023.nlargest(5, "kwh")[["building","kwh","gas_cuft","sqft"]]
     print(top5.to_string(index=False))
 
-    print("\nStep 1 complete. Run step2_calculate_emissions.py next.")
