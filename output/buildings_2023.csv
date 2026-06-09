@@ -1,0 +1,50 @@
+building,kwh,gas_cuft,sqft,fuel,use,year_built
+ALCC,5330.0,0.0,3724.0,GAS,Academic Building,1917.0
+Babbitt #1,467040.0,0.0,,,,
+Babbitt #2,588720.0,0.0,,,,
+Backus House,5581.0,0.0,6384.0,GAS,Academic Building,1802.0
+Beinecke Annex,45185.0,0.0,,,,
+Beinecke Village,120947.2,0.0,25159.0,GAS,Student Activity Buildings,1993.0
+Benedict,29140.0,0.0,10705.0,GAS,Academic Building,1897.0
+Bristol Center,245158.0,0.0,36416.0,GAS,Student Activity Buildings,1965.0
+Bundy D H,99520.0,0.0,,,,
+Bundy East,490729.0,0.0,31516.0,ELEC,Resident Hall,1970.0
+Bundy West,70880.0,0.0,31516.0,ELEC,Resident Hall,1970.0
+Burke Library,1985280.0,0.0,102756.0,ELEC,Academic Building,1972.0
+Buttrick,0.0,442439.0,10176.0,GAS,Administrative Buildings,1812.0
+C.A. Johnson,0.0,2579407.0,,,,
+Chapel,17808.0,0.0,16314.0,GAS,Academic Building,1827.0
+Commons,678700.0,538069.0,28551.0,GAS,Dining Halls,1903.0
+Couper Hall,17060.0,0.0,7527.0,GAS,Academic Building,1888.0
+Dunham,304982.8,1809390.0,66716.0,GAS,Resident Hall,1904.0
+E.Root (Old Admissions),52845.0,0.0,,,,
+Eells,147268.0,0.0,29235.0,GAS,Resident Hall,1927.0
+Ferguson,119941.8,0.0,27814.0,GAS,Resident Hall,
+Field House,663040.0,0.0,80405.0,GAS,Athletic Building,1978.0
+Gym,1441426.0,1555646.0,62942.0,GAS,Athletic Building,1940.0
+Health Center,14367.0,0.0,14151.0,nan,Administrative Buildings,2018.0
+KTSA,802637.0,0.0,,,,
+Keehn Dorm,69760.0,0.0,,,,
+Kirkland Dorm,106043.0,0.0,,,,
+Kirner Johnson,1553493.0,0.0,92862.0,GAS,Academic Building,1971.0
+List,767791.0,0.0,40936.0,ELEC,Academic Building,1970.0
+Little Pub,55274.0,0.0,6919.0,GAS,Student Activity Buildings,1996.0
+Major,70891.0,0.0,18031.0,GAS,Resident Hall,1968.0
+McEwen D H,636600.0,0.0,,,,
+Mcintosh,76928.0,0.0,18031.0,GAS,Resident Hall,1968.0
+Milbank #1,522700.0,0.0,,,,
+Milbank #2,582960.0,0.0,,,,
+Minor Dorm,81472.0,0.0,,,,
+North Dorm,119520.0,0.0,,,,
+Old Chlorinator Hse.,16607.0,0.0,,,,
+Root Dorm,137040.0,0.0,,,,
+Sadove Campus Center,754104.0,0.0,36416.0,GAS,Student Activity Buildings,1965.0
+Sage Rink,1032707.0,0.0,40232.0,GAS,Athletic Building,1921.0
+Schambach,368500.0,0.0,54507.0,GAS,Academic Building,1987.0
+Science Facility,5897290.0,0.0,,,,
+Solar Classroom,11397.0,0.0,1000.0,ELEC,Academic Building,1976.0
+Spencer House,67463.0,0.0,16788.0,GAS,Administrative Buildings,1905.0
+Wally J. (98 CHR),30417.0,0.0,,,,
+Wellin Art Museum,865931.79,0.0,30537.0,GEO,Academic Building,2012.0
+Wertimer House,88167.2,0.0,15920.0,GAS,Resident Hall,1927.0
+Woollcott,47024.0,0.0,11798.0,GAS,Resident Hall,1925.0

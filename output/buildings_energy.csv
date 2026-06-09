@@ -1,0 +1,1244 @@
+year,building,kwh,gas_cuft
+2021,(kilowatts),0.0,0.0
+2022,(kilowatts),0.0,0.0
+2023,(kilowatts),0.0,0.0
+2024,(kilowatts),0.0,0.0
+2025,(kilowatts),0.0,0.0
+2003,98 C H R,0.0,0.0
+2003,ALCC,0.0,0.0
+2004,ALCC,4538.0,0.0
+2005,ALCC,4249.0,0.0
+2006,ALCC,0.0,0.0
+2007,ALCC,3027.0,0.0
+2008,ALCC,4636.0,0.0
+2009,ALCC,5534.0,0.0
+2010,ALCC,6489.0,0.0
+2011,ALCC,4428.0,0.0
+2012,ALCC,2396.0,0.0
+2013,ALCC,4038.0,0.0
+2014,ALCC,3565.0,0.0
+2015,ALCC,4629.0,0.0
+2016,ALCC,7052.0,0.0
+2017,ALCC,8278.0,0.0
+2018,ALCC,9774.0,0.0
+2019,ALCC,5382.0,0.0
+2020,ALCC,4428.0,0.0
+2021,ALCC,4962.0,0.0
+2022,ALCC,5594.0,0.0
+2023,ALCC,5330.0,0.0
+2024,ALCC,3761.0,0.0
+2025,ALCC,4568.0,0.0
+2003,Admissions,0.0,0.0
+2004,Admissions,50335.0,0.0
+2005,Admissions,66584.0,0.0
+2006,Admissions,0.0,0.0
+2003,Artificial Turf Field,0.0,0.0
+2004,Artificial Turf Field,0.0,0.0
+2005,Artificial Turf Field,0.0,0.0
+2006,Artificial Turf Field,0.0,0.0
+2007,Artificial Turf Field,0.0,0.0
+2008,Artificial Turf Field,0.0,0.0
+2009,Artificial Turf Field,0.0,0.0
+2003,Babbitt #1,0.0,0.0
+2004,Babbitt #1,477120.0,0.0
+2005,Babbitt #1,504000.0,0.0
+2006,Babbitt #1,0.0,0.0
+2007,Babbitt #1,470640.0,0.0
+2008,Babbitt #1,424320.0,0.0
+2009,Babbitt #1,396038.0,0.0
+2010,Babbitt #1,377340.0,0.0
+2011,Babbitt #1,426240.0,0.0
+2012,Babbitt #1,412560.0,0.0
+2013,Babbitt #1,441600.0,0.0
+2014,Babbitt #1,441840.0,0.0
+2015,Babbitt #1,433200.0,0.0
+2016,Babbitt #1,452640.0,0.0
+2017,Babbitt #1,439680.0,0.0
+2018,Babbitt #1,493800.0,0.0
+2019,Babbitt #1,495840.0,0.0
+2020,Babbitt #1,371280.0,0.0
+2021,Babbitt #1,467520.0,0.0
+2022,Babbitt #1,493680.0,0.0
+2023,Babbitt #1,467040.0,0.0
+2024,Babbitt #1,453120.0,0.0
+2025,Babbitt #1,490080.0,0.0
+2003,Babbitt #2,0.0,0.0
+2004,Babbitt #2,634320.0,0.0
+2005,Babbitt #2,656160.0,0.0
+2006,Babbitt #2,0.0,0.0
+2007,Babbitt #2,630240.0,0.0
+2008,Babbitt #2,586080.0,0.0
+2009,Babbitt #2,555360.0,0.0
+2010,Babbitt #2,525360.0,0.0
+2011,Babbitt #2,563460.0,0.0
+2012,Babbitt #2,583440.0,0.0
+2013,Babbitt #2,600140.0,0.0
+2014,Babbitt #2,524600.0,0.0
+2015,Babbitt #2,584880.0,0.0
+2016,Babbitt #2,574153.0,0.0
+2017,Babbitt #2,408369.0,0.0
+2018,Babbitt #2,518538.0,0.0
+2019,Babbitt #2,585857.0,0.0
+2020,Babbitt #2,459120.0,0.0
+2021,Babbitt #2,638400.0,0.0
+2022,Babbitt #2,675360.0,0.0
+2023,Babbitt #2,588720.0,0.0
+2024,Babbitt #2,588240.0,0.0
+2025,Babbitt #2,708000.0,0.0
+2003,Backus House,0.0,0.0
+2004,Backus House,13691.0,0.0
+2005,Backus House,16816.0,0.0
+2006,Backus House,0.0,0.0
+2007,Backus House,12198.0,0.0
+2008,Backus House,10315.0,0.0
+2009,Backus House,10380.0,0.0
+2010,Backus House,10819.0,0.0
+2011,Backus House,11471.0,0.0
+2012,Backus House,11353.0,0.0
+2013,Backus House,10357.0,0.0
+2014,Backus House,8492.0,0.0
+2015,Backus House,7704.0,0.0
+2016,Backus House,6651.0,0.0
+2017,Backus House,8033.0,0.0
+2018,Backus House,15040.0,0.0
+2019,Backus House,8136.0,0.0
+2020,Backus House,7883.0,0.0
+2021,Backus House,7599.0,0.0
+2022,Backus House,4789.0,0.0
+2023,Backus House,5581.0,0.0
+2024,Backus House,5206.0,0.0
+2025,Backus House,5407.0,0.0
+2003,Beinecke Annex,0.0,0.0
+2004,Beinecke Annex,87893.9,0.0
+2005,Beinecke Annex,90895.8,0.0
+2006,Beinecke Annex,0.0,0.0
+2007,Beinecke Annex,67587.8,0.0
+2008,Beinecke Annex,57466.3,0.0
+2009,Beinecke Annex,51068.2,0.0
+2010,Beinecke Annex,49721.1,0.0
+2011,Beinecke Annex,50876.2,0.0
+2012,Beinecke Annex,47298.2,0.0
+2013,Beinecke Annex,52140.8,0.0
+2014,Beinecke Annex,44088.0,0.0
+2015,Beinecke Annex,45064.0,0.0
+2016,Beinecke Annex,44020.0,0.0
+2017,Beinecke Annex,36848.3,0.0
+2018,Beinecke Annex,42513.2,0.0
+2019,Beinecke Annex,76430.2,0.0
+2020,Beinecke Annex,91679.7,0.0
+2021,Beinecke Annex,57549.6,0.0
+2022,Beinecke Annex,50450.5,0.0
+2023,Beinecke Annex,45185.0,0.0
+2024,Beinecke Annex,31970.5,0.0
+2025,Beinecke Annex,48021.8,0.0
+2003,Beinecke Village,0.0,0.0
+2004,Beinecke Village,166919.0,0.0
+2005,Beinecke Village,174534.0,0.0
+2006,Beinecke Village,0.0,0.0
+2007,Beinecke Village,702384.82,0.0
+2008,Beinecke Village,143704.1,0.0
+2009,Beinecke Village,131821.0,0.0
+2010,Beinecke Village,134589.0,0.0
+2011,Beinecke Village,128197.0,0.0
+2012,Beinecke Village,124393.0,0.0
+2013,Beinecke Village,138611.0,0.0
+2014,Beinecke Village,123654.0,0.0
+2015,Beinecke Village,126000.0,0.0
+2016,Beinecke Village,127990.0,0.0
+2017,Beinecke Village,126510.0,0.0
+2018,Beinecke Village,130745.0,0.0
+2019,Beinecke Village,126436.1,0.0
+2020,Beinecke Village,95323.0,0.0
+2021,Beinecke Village,119986.0,0.0
+2022,Beinecke Village,126510.2,0.0
+2023,Beinecke Village,120947.2,0.0
+2024,Beinecke Village,121750.0,0.0
+2025,Beinecke Village,122446.0,0.0
+2003,Benedict,0.0,0.0
+2004,Benedict,27350.0,0.0
+2005,Benedict,29619.0,0.0
+2006,Benedict,0.0,0.0
+2007,Benedict,24905.0,0.0
+2008,Benedict,27816.0,0.0
+2009,Benedict,25518.0,0.0
+2010,Benedict,24356.0,0.0
+2011,Benedict,23561.0,0.0
+2012,Benedict,23338.0,0.0
+2013,Benedict,25127.0,0.0
+2014,Benedict,22925.0,0.0
+2015,Benedict,21208.0,0.0
+2016,Benedict,20566.0,0.0
+2017,Benedict,23514.0,0.0
+2018,Benedict,22630.0,0.0
+2019,Benedict,23589.0,0.0
+2020,Benedict,20448.0,0.0
+2021,Benedict,26670.0,0.0
+2022,Benedict,26387.0,0.0
+2023,Benedict,29140.0,0.0
+2024,Benedict,32793.0,0.0
+2025,Benedict,32809.0,0.0
+2003,Bristol,0.0,0.0
+2004,Bristol,417380.0,0.0
+2005,Bristol,433662.0,0.0
+2006,Bristol,0.0,0.0
+2007,Bristol,372663.0,0.0
+2008,Bristol,335591.425,0.0
+2009,Bristol,328060.0,0.0
+2010,Bristol,276250.0,0.0
+2011,Bristol,276170.0,0.0
+2012,Bristol,276140.0,0.0
+2013,Bristol,274000.0,0.0
+2014,Bristol,260430.0,0.0
+2015,Bristol Center,262692.0,0.0
+2016,Bristol Center,265938.0,0.0
+2017,Bristol Center,262744.0,0.0
+2018,Bristol Center,231735.527,0.0
+2019,Bristol Center,246797.801,0.0
+2020,Bristol Center,256052.0,0.0
+2021,Bristol Center,254874.0,0.0
+2022,Bristol Center,250420.0,0.0
+2023,Bristol Center,245158.0,0.0
+2024,Bristol Center,266449.502,0.0
+2025,Bristol Center,270742.0,0.0
+2003,Bundy D H,0.0,0.0
+2004,Bundy D H,63840.0,0.0
+2005,Bundy D H,59360.0,0.0
+2006,Bundy D H,0.0,0.0
+2007,Bundy D H,64800.0,0.0
+2008,Bundy D H,65840.0,0.0
+2009,Bundy D H,65760.0,0.0
+2010,Bundy D H,63520.0,0.0
+2011,Bundy D H,62880.0,0.0
+2012,Bundy D H,63280.0,0.0
+2013,Bundy D H,64320.0,0.0
+2014,Bundy D H,60080.0,0.0
+2015,Bundy D H,58000.0,0.0
+2016,Bundy D H,53120.0,0.0
+2017,Bundy D H,79040.0,0.0
+2018,Bundy D H,133840.0,0.0
+2019,Bundy D H,145440.0,0.0
+2020,Bundy D H,149360.0,0.0
+2021,Bundy D H,110560.0,0.0
+2022,Bundy D H,94240.0,0.0
+2023,Bundy D H,99520.0,0.0
+2024,Bundy D H,89360.0,0.0
+2025,Bundy D H,139880.0,0.0
+2003,Bundy East,0.0,0.0
+2004,Bundy East,499840.0,0.0
+2005,Bundy East,511520.0,0.0
+2006,Bundy East,0.0,0.0
+2007,Bundy East,454240.0,0.0
+2008,Bundy East,517600.0,0.0
+2009,Bundy East,457760.0,0.0
+2010,Bundy East,389280.0,0.0
+2011,Bundy East,337280.0,0.0
+2012,Bundy East,320000.0,0.0
+2013,Bundy East,359200.0,0.0
+2014,Bundy East,337200.0,0.0
+2015,Bundy East,346400.0,0.0
+2016,Bundy East,356860.0,0.0
+2017,Bundy East,413040.0,0.0
+2018,Bundy East,487360.0,0.0
+2019,Bundy East,476640.0,0.0
+2020,Bundy East,528800.0,0.0
+2021,Bundy East,476160.0,0.0
+2022,Bundy East,496160.0,0.0
+2023,Bundy East,490729.0,0.0
+2024,Bundy East,446240.0,0.0
+2025,Bundy East,525120.0,0.0
+2003,Bundy West,0.0,0.0
+2004,Bundy West,440000.0,0.0
+2005,Bundy West,445120.0,0.0
+2006,Bundy West,0.0,0.0
+2007,Bundy West,408800.0,0.0
+2008,Bundy West,409260.0,0.0
+2009,Bundy West,413920.0,0.0
+2010,Bundy West,333929.0,0.0
+2011,Bundy West,340440.0,0.0
+2012,Bundy West,290720.0,0.0
+2013,Bundy West,315840.0,0.0
+2014,Bundy West,309280.0,0.0
+2015,Bundy West,343840.0,0.0
+2016,Bundy West,322560.0,0.0
+2017,Bundy West,343680.0,0.0
+2018,Bundy West,182400.0,0.0
+2019,Bundy West,185600.0,0.0
+2020,Bundy West,129260.0,0.0
+2021,Bundy West,68160.0,0.0
+2022,Bundy West,162080.0,0.0
+2023,Bundy West,70880.0,0.0
+2024,Bundy West,158720.0,0.0
+2025,Bundy West,156320.0,0.0
+2003,Burke Library,0.0,0.0
+2004,Burke Library,3304320.0,0.0
+2005,Burke Library,3024000.0,0.0
+2006,Burke Library,0.0,0.0
+2007,Burke Library,3304320.0,0.0
+2008,Burke Library,2444160.0,0.0
+2009,Burke Library,2227200.0,0.0
+2010,Burke Library,2092800.0,0.0
+2011,Burke Library,2071680.0,0.0
+2012,Burke Library,2103160.0,0.0
+2013,Burke Library,2244480.0,0.0
+2014,Burke Library,1875840.0,0.0
+2015,Burke Library,1829760.0,0.0
+2016,Burke Library,1933440.0,0.0
+2017,Burke Library,1958400.0,0.0
+2018,Burke Library,2225280.0,0.0
+2019,Burke Library,2405760.0,0.0
+2020,Burke Library,1957440.0,0.0
+2021,Burke Library,2085120.0,0.0
+2022,Burke Library,1971840.0,0.0
+2023,Burke Library,1985280.0,0.0
+2024,Burke Library,1875840.0,0.0
+2025,Burke Library,1964160.0,0.0
+2003,Buttrick,0.0,0.0
+2004,Buttrick,0.0,0.0
+2005,Buttrick,0.0,0.0
+2006,Buttrick,0.0,0.0
+2007,Buttrick,0.0,0.0
+2008,Buttrick,0.0,834290.0
+2009,Buttrick,0.0,822696.0
+2010,Buttrick,0.0,694053.0
+2011,Buttrick,0.0,755952.0
+2012,Buttrick,0.0,627558.0
+2013,Buttrick,0.0,707757.0
+2014,Buttrick,0.0,656432.0
+2015,Buttrick,0.0,685727.0
+2016,Buttrick,0.0,642104.0
+2017,Buttrick,0.0,740963.0
+2018,Buttrick,0.0,1750582.0
+2019,Buttrick,0.0,791862.0
+2020,Buttrick,0.0,2269901.0
+2021,Buttrick,0.0,788727.0
+2022,Buttrick,0.0,717552.0
+2023,Buttrick,0.0,442439.0
+2024,Buttrick,0.0,51058.0
+2025,Buttrick,0.0,66521.0
+2003,C.A. Johnson,0.0,0.0
+2004,C.A. Johnson,493459.0,0.0
+2005,C.A. Johnson,0.0,0.0
+2006,C.A. Johnson,0.0,0.0
+2007,C.A. Johnson,468142.0,0.0
+2008,C.A. Johnson,448308.0,2215440.0
+2009,C.A. Johnson,398614.0,2356690.0
+2010,C.A. Johnson,394579.0,2000090.0
+2011,C.A. Johnson,0.0,2155796.0
+2012,C.A. Johnson,0.0,2223763.0
+2013,C.A. Johnson,0.0,2628375.0
+2014,C.A. Johnson,0.0,3099855.0
+2015,C.A. Johnson,0.0,4000864.0
+2016,C.A. Johnson,0.0,2038330.0
+2017,C.A. Johnson,27960.0,1594165.1
+2018,C.A. Johnson,43960.0,2193367.0
+2019,C.A. Johnson,0.0,2493151.0
+2021,C.A. Johnson,0.0,3113868.0
+2022,C.A. Johnson,0.0,2509349.0
+2023,C.A. Johnson,0.0,2579407.0
+2024,C.A. Johnson,0.0,2667169.0
+2025,C.A. Johnson,0.0,2598240.0
+2003,Carnegie,0.0,0.0
+2004,Carnegie,0.0,0.0
+2005,Carnegie,0.0,0.0
+2006,Carnegie,0.0,0.0
+2007,Carnegie,0.0,0.0
+2008,Carnegie,0.0,0.0
+2009,Carnegie,0.0,0.0
+2010,Carnegie,0.0,0.0
+2011,Carnegie,0.0,0.0
+2012,Carnegie,0.0,0.0
+2013,Carnegie,0.0,0.0
+2014,Carnegie,0.0,0.0
+2015,Carnegie,0.0,0.0
+2016,Carnegie,0.0,0.0
+2017,Carnegie,0.0,0.0
+2018,Carnegie,0.0,0.0
+2019,Carnegie,0.0,0.0
+2021,Carnegie,0.0,0.0
+2022,Carnegie,0.0,0.0
+2023,Carnegie,0.0,0.0
+2024,Carnegie,0.0,0.0
+2025,Carnegie,0.0,0.0
+2003,Chapel,0.0,0.0
+2004,Chapel,23874.0,0.0
+2005,Chapel,21936.0,0.0
+2006,Chapel,0.0,0.0
+2007,Chapel,22464.0,0.0
+2008,Chapel,23764.0,0.0
+2009,Chapel,21972.0,0.0
+2010,Chapel,22914.0,0.0
+2011,Chapel,31042.0,0.0
+2012,Chapel,25542.0,0.0
+2013,Chapel,22992.0,0.0
+2014,Chapel,18450.0,0.0
+2015,Chapel,18042.0,0.0
+2016,Chapel,15720.0,0.0
+2017,Chapel,17640.0,0.0
+2018,Chapel,18414.0,0.0
+2019,Chapel,21035.0,0.0
+2020,Chapel,18972.0,0.0
+2021,Chapel,15936.0,0.0
+2022,Chapel,18330.0,0.0
+2023,Chapel,17808.0,0.0
+2024,Chapel,18942.0,0.0
+2025,Chapel,17724.0,0.0
+2003,Chemistry,0.0,0.0
+2004,Chemistry,440600.0,0.0
+2005,Chemistry,0.0,0.0
+2006,Chemistry,0.0,0.0
+2007,Chemistry,0.0,0.0
+2008,Chemistry,0.0,0.0
+2009,Chemistry,0.0,0.0
+2005,Commons,0.0,0.0
+2006,Commons,0.0,0.0
+2007,Commons,637352.0,0.0
+2008,Commons,1400540.22,0.0
+2009,Commons,594670.0,2859310.0
+2010,Commons,589800.0,1530020.0
+2011,Commons,616430.0,8697470.0
+2012,Commons,625130.0,4303370.0
+2013,Commons,649190.0,5011230.0
+2014,Commons,587640.0,4552720.0
+2015,Commons,605970.0,5633990.0
+2016,Commons,593370.0,5155800.0
+2017,Commons,596460.0,5691300.0
+2018,Commons,597560.0,5425440.0
+2019,Commons,616550.0,5847640.0
+2021,Commons,530526.6,3096761.0
+2022,Commons,650826.0,583642.0
+2023,Commons,678700.0,538069.0
+2024,Commons,734330.0,479315.0
+2025,Commons,774630.0,568691.0
+2003,Couper Hall,0.0,0.0
+2004,Couper Hall,19808.0,0.0
+2005,Couper Hall,18673.0,0.0
+2006,Couper Hall,0.0,0.0
+2007,Couper Hall,23849.0,0.0
+2008,Couper Hall,14138.0,0.0
+2009,Couper Hall,10296.0,0.0
+2010,Couper Hall,10018.0,0.0
+2011,Couper Hall,10687.0,0.0
+2012,Couper Hall,10943.0,0.0
+2013,Couper Hall,13592.0,0.0
+2014,Couper Hall,9245.0,0.0
+2015,Couper Hall,11582.0,0.0
+2016,Couper Hall,10994.0,0.0
+2017,Couper Hall,11155.0,0.0
+2018,Couper Hall,12759.0,0.0
+2019,Couper Hall,13419.0,0.0
+2020,Couper Hall,11732.0,0.0
+2021,Couper Hall,25721.0,0.0
+2022,Couper Hall,14622.0,0.0
+2023,Couper Hall,17060.0,0.0
+2024,Couper Hall,16603.0,0.0
+2025,Couper Hall,16969.0,0.0
+2003,DKE,0.0,0.0
+2004,DKE,0.0,0.0
+2005,DKE,0.0,0.0
+2006,DKE,0.0,0.0
+2007,DKE,0.0,0.0
+2008,DKE,0.0,0.0
+2009,DKE,0.0,0.0
+2010,DKE,0.0,0.0
+2011,DKE,0.0,0.0
+2012,DKE,0.0,0.0
+2013,DKE,0.0,0.0
+2014,DKE,0.0,0.0
+2015,DKE,0.0,0.0
+2016,DKE,0.0,0.0
+2017,DKE,0.0,0.0
+2018,DKE,0.0,0.0
+2019,DKE,0.0,0.0
+2003,Dunham,0.0,0.0
+2004,Dunham,342545.7,0.0
+2005,Dunham,473933.3,0.0
+2006,Dunham,0.0,0.0
+2007,Dunham,328008.5,0.0
+2008,Dunham,352442.0,519765.0
+2009,Dunham,310091.6,390530.0
+2010,Dunham,315629.2,1632247.0
+2011,Dunham,303453.7,1025479.0
+2012,Dunham,287719.1,1791701.0
+2013,Dunham,270548.8,420400.0
+2014,Dunham,258083.0,305668.0
+2015,Dunham,510071.5,176663.0
+2016,Dunham,626168.8,9711049.0
+2017,Dunham,280041.1,2867601.0
+2018,Dunham,321961.1,2718400.0
+2019,Dunham,988993.9,3816990.0
+2020,Dunham,233328.8,2124310.0
+2021,Dunham,341232.1,0.0
+2022,Dunham,560542.0,3297010.0
+2023,Dunham,304982.8,1809390.0
+2024,Dunham,270639.2,111450.0
+2025,Dunham,271652.8,283071.0
+2007,E.Root (Old Admissions),75551.0,0.0
+2008,E.Root (Old Admissions),77865.0,0.0
+2009,E.Root (Old Admissions),83285.0,0.0
+2010,E.Root (Old Admissions),79388.0,0.0
+2011,E.Root (Old Admissions),77187.0,0.0
+2012,E.Root (Old Admissions),65637.0,0.0
+2013,E.Root (Old Admissions),63302.0,0.0
+2014,E.Root (Old Admissions),55942.0,0.0
+2015,E.Root (Old Admissions),57378.0,0.0
+2016,E.Root (Old Admissions),56632.0,0.0
+2017,E.Root (Old Admissions),51037.0,0.0
+2018,E.Root (Old Admissions),60990.0,0.0
+2019,E.Root (Old Admissions),67033.0,0.0
+2020,E.Root (Old Admissions),86455.0,0.0
+2021,E.Root (Old Admissions),59724.0,0.0
+2022,E.Root (Old Admissions),62221.0,0.0
+2023,E.Root (Old Admissions),52845.0,0.0
+2024,E.Root (Old Admissions),47655.0,0.0
+2025,E.Root (Old Admissions),48833.0,0.0
+2003,ELS,0.0,0.0
+2004,ELS,0.0,0.0
+2005,ELS,0.0,0.0
+2006,ELS,0.0,0.0
+2007,ELS,0.0,0.0
+2008,ELS,0.0,0.0
+2009,ELS,0.0,0.0
+2003,Eells,0.0,0.0
+2004,Eells,207339.0,0.0
+2005,Eells,196903.0,0.0
+2006,Eells,0.0,0.0
+2007,Eells,181781.0,0.0
+2008,Eells,170950.0,0.0
+2009,Eells,158243.0,0.0
+2010,Eells,145960.0,0.0
+2011,Eells,154981.0,0.0
+2012,Eells,160584.0,0.0
+2013,Eells,153952.0,0.0
+2014,Eells,120284.0,0.0
+2015,Eells,0.0,0.0
+2016,Eells,141793.0,0.0
+2017,Eells,138333.0,0.0
+2018,Eells,134105.0,0.0
+2019,Eells,133092.0,0.0
+2020,Eells,120250.0,0.0
+2021,Eells,146988.0,0.0
+2022,Eells,155963.0,0.0
+2023,Eells,147268.0,0.0
+2024,Eells,144219.0,0.0
+2025,Eells,134462.0,0.0
+2003,Farmhouse,0.0,0.0
+2004,Farmhouse,0.0,0.0
+2005,Farmhouse,0.0,0.0
+2006,Farmhouse,0.0,0.0
+2007,Farmhouse,0.0,0.0
+2008,Farmhouse,0.0,0.0
+2009,Farmhouse,0.0,0.0
+2010,Farmhouse,0.0,0.0
+2011,Farmhouse,0.0,0.0
+2012,Farmhouse,0.0,0.0
+2013,Farmhouse,0.0,0.0
+2014,Farmhouse,0.0,0.0
+2015,Farmhouse,0.0,0.0
+2016,Farmhouse,0.0,0.0
+2017,Farmhouse,0.0,0.0
+2018,Farmhouse,0.0,0.0
+2019,Farmhouse,0.0,0.0
+2003,Ferguson,0.0,0.0
+2004,Ferguson,159019.3,0.0
+2005,Ferguson,141379.0,0.0
+2006,Ferguson,0.0,0.0
+2007,Ferguson,141844.9,0.0
+2008,Ferguson,148234.3,0.0
+2009,Ferguson,184558.9,0.0
+2010,Ferguson,135967.2,0.0
+2011,Ferguson,194922.7,0.0
+2012,Ferguson,132462.8,0.0
+2013,Ferguson,278787.1,0.0
+2014,Ferguson,130783.7,0.0
+2015,Ferguson,120624.7,0.0
+2016,Ferguson,115672.7,0.0
+2017,Ferguson,115327.3,0.0
+2018,Ferguson,124081.7,0.0
+2019,Ferguson,118882.1,0.0
+2020,Ferguson,95036.2,0.0
+2021,Ferguson,227689.8,0.0
+2022,Ferguson,126587.0,0.0
+2023,Ferguson,119941.8,0.0
+2024,Ferguson,124720.0,0.0
+2025,Ferguson,131713.2,0.0
+2003,Field House,0.0,0.0
+2004,Field House,660480.0,0.0
+2005,Field House,662360.0,0.0
+2006,Field House,0.0,0.0
+2007,Field House,844800.0,0.0
+2008,Field House,880000.0,0.0
+2009,Field House,739920.0,0.0
+2010,Field House,637440.0,0.0
+2011,Field House,612480.0,0.0
+2012,Field House,650240.0,0.0
+2013,Field House,691200.0,0.0
+2014,Field House,680320.0,0.0
+2015,Field House,662400.0,0.0
+2016,Field House,697600.0,0.0
+2017,Field House,712320.0,0.0
+2018,Field House,651520.0,0.0
+2019,Field House,695680.0,0.0
+2020,Field House,594560.0,0.0
+2021,Field House,722560.0,0.0
+2022,Field House,704640.0,0.0
+2023,Field House,663040.0,0.0
+2024,Field House,706560.0,0.0
+2025,Field House,679680.0,0.0
+2003,Gym,0.0,0.0
+2004,Gym,1345280.0,0.0
+2005,Gym,1281920.0,0.0
+2006,Gym,1157120.0,0.0
+2007,Gym,1114240.0,0.0
+2008,Gym,1084160.0,189416.0
+2009,Gym,1018240.0,18110350.0
+2010,Gym,922880.0,14776870.0
+2011,Gym,937598.0,15955790.0
+2012,Gym,1044480.0,14390166.0
+2013,Gym,995840.0,15946070.0
+2014,Gym,1139840.0,14745030.0
+2015,Gym,1072640.0,14705340.0
+2016,Gym,1010560.0,14968450.0
+2017,Gym,974720.0,15623050.0
+2018,Gym,920320.0,16255070.0
+2019,Gym,925440.0,17342950.0
+2020,Gym,873600.0,14646920.0
+2021,Gym,1407360.0,11976731.0
+2022,Gym,1135360.0,1686678.0
+2023,Gym,1441426.0,1555646.0
+2024,Gym,1458488.0,1551279.0
+2025,Gym,1439743.0,1647025.0
+2003,Health Center,0.0,0.0
+2004,Health Center,21355.0,0.0
+2005,Health Center,23082.0,0.0
+2006,Health Center,0.0,0.0
+2007,Health Center,24944.0,0.0
+2008,Health Center,26598.0,0.0
+2009,Health Center,25240.0,0.0
+2010,Health Center,23771.0,0.0
+2011,Health Center,21311.0,0.0
+2012,Health Center,26024.0,0.0
+2013,Health Center,26863.0,0.0
+2014,Health Center,24020.0,0.0
+2015,Health Center,22347.0,0.0
+2016,Health Center,21942.0,0.0
+2017,Health Center,23590.0,0.0
+2018,Health Center,24360.0,0.0
+2019,Health Center,9934.0,0.0
+2020,Health Center,9201.0,0.0
+2021,Health Center,10215.0,0.0
+2022,Health Center,14461.0,0.0
+2023,Health Center,14367.0,0.0
+2024,Health Center,16017.0,0.0
+2025,Health Center,20658.0,0.0
+2015,K T S A,827175.0,0.0
+2016,K T S A,826350.0,0.0
+2017,K T S A,842800.0,0.0
+2018,K T S A,852624.0,0.0
+2019,K T S A,855958.0,0.0
+2020,K T S A,791902.0,0.0
+2021,KTSA,830704.0,0.0
+2022,KTSA,808967.0,0.0
+2023,KTSA,802637.0,0.0
+2024,KTSA,863339.0,0.0
+2025,KTSA,903822.0,0.0
+2003,Keehn Dorm,0.0,0.0
+2004,Keehn Dorm,169920.0,0.0
+2005,Keehn Dorm,157440.0,0.0
+2006,Keehn Dorm,0.0,0.0
+2007,Keehn Dorm,187200.0,0.0
+2008,Keehn Dorm,161280.0,0.0
+2009,Keehn Dorm,144000.0,0.0
+2010,Keehn Dorm,139920.0,0.0
+2011,Keehn Dorm,159120.0,0.0
+2012,Keehn Dorm,167040.0,0.0
+2013,Keehn Dorm,157680.0,0.0
+2014,Keehn Dorm,0.0,0.0
+2015,Keehn Dorm,0.0,0.0
+2016,Keehn Dorm,74400.0,0.0
+2017,Keehn Dorm,68640.0,0.0
+2018,Keehn Dorm,70560.0,0.0
+2019,Keehn Dorm,68480.0,0.0
+2020,Keehn Dorm,63040.0,0.0
+2021,Keehn Dorm,75040.0,0.0
+2022,Keehn Dorm,72160.0,0.0
+2023,Keehn Dorm,69760.0,0.0
+2024,Keehn Dorm,67360.0,0.0
+2025,Keehn Dorm,67840.0,0.0
+2003,Kirkland Dorm,0.0,0.0
+2004,Kirkland Dorm,139290.0,0.0
+2005,Kirkland Dorm,131890.0,0.0
+2006,Kirkland Dorm,0.0,0.0
+2007,Kirkland Dorm,38460.0,0.0
+2008,Kirkland Dorm,36260.0,0.0
+2009,Kirkland Dorm,0.0,0.0
+2010,Kirkland Dorm,110133.0,0.0
+2011,Kirkland Dorm,102505.0,0.0
+2012,Kirkland Dorm,101439.0,0.0
+2013,Kirkland Dorm,177557.0,0.0
+2014,Kirkland Dorm,100975.0,0.0
+2015,Kirkland Dorm,101510.0,0.0
+2016,Kirkland Dorm,106675.0,0.0
+2017,Kirkland Dorm,107551.0,0.0
+2018,Kirkland Dorm,104925.0,0.0
+2019,Kirkland Dorm,108116.0,0.0
+2020,Kirkland Dorm,89820.0,0.0
+2021,Kirkland Dorm,107247.0,0.0
+2022,Kirkland Dorm,107604.0,0.0
+2023,Kirkland Dorm,106043.0,0.0
+2024,Kirkland Dorm,107881.0,0.0
+2025,Kirkland Dorm,110804.0,0.0
+2003,Kirner Johnson,0.0,0.0
+2004,Kirner Johnson,1303200.0,0.0
+2005,Kirner Johnson,1262323.2,0.0
+2006,Kirner Johnson,0.0,0.0
+2007,Kirner Johnson,910696.8,0.0
+2008,Kirner Johnson,0.0,0.0
+2009,Kirner Johnson,0.0,0.0
+2010,Kirner Johnson,1155783.0,0.0
+2011,Kirner Johnson,1210293.0,0.0
+2012,Kirner Johnson,1235043.0,0.0
+2013,Kirner Johnson,1248394.0,0.0
+2014,Kirner Johnson,1176625.0,0.0
+2015,Kirner Johnson,1175522.0,0.0
+2016,Kirner Johnson,1153838.0,0.0
+2017,Kirner Johnson,1179014.0,0.0
+2018,Kirner Johnson,1109908.866,0.0
+2019,Kirner Johnson,1196200.0,0.0
+2020,Kirner Johnson,1115397.0,0.0
+2021,Kirner Johnson,1283724.0,0.0
+2022,Kirner Johnson,1594427.0,0.0
+2023,Kirner Johnson,1553493.0,0.0
+2024,Kirner Johnson,1545374.0,0.0
+2025,Kirner Johnson,1507576.0,0.0
+2003,List,0.0,0.0
+2004,List,1091760.0,0.0
+2005,List,994560.0,0.0
+2006,List,0.0,0.0
+2007,List,927360.0,0.0
+2008,List,1065600.0,0.0
+2009,List,931440.0,0.0
+2010,List,804960.0,0.0
+2011,List,792190.0,0.0
+2012,List,787920.0,0.0
+2013,List,777560.0,0.0
+2014,List,688080.0,0.0
+2015,List,733440.0,0.0
+2016,List,574800.0,0.0
+2017,List,588000.0,0.0
+2018,List,647520.0,0.0
+2019,List,631440.0,0.0
+2020,List,0.0,0.0
+2021,List,0.0,0.0
+2022,List,783051.0,0.0
+2023,List,767791.0,0.0
+2024,List,767608.0,0.0
+2025,List,854644.0,0.0
+2007,Little Pub,0.0,0.0
+2008,Little Pub,75203.0,0.0
+2009,Little Pub,65638.0,0.0
+2010,Little Pub,60569.0,0.0
+2011,Little Pub,62489.0,0.0
+2012,Little Pub,70920.0,0.0
+2013,Little Pub,70116.0,0.0
+2014,Little Pub,63520.0,0.0
+2015,Little Pub,67569.0,0.0
+2016,Little Pub,72833.0,0.0
+2017,Little Pub,65581.0,0.0
+2018,Little Pub,63554.0,0.0
+2019,Little Pub,59933.0,0.0
+2020,Little Pub,47237.0,0.0
+2021,Little Pub,54145.0,0.0
+2022,Little Pub,58198.0,0.0
+2023,Little Pub,55274.0,0.0
+2024,Little Pub,60934.0,0.0
+2025,Little Pub,56556.0,0.0
+2003,Major,0.0,0.0
+2004,Major,178320.0,0.0
+2005,Major,189840.0,0.0
+2006,Major,0.0,0.0
+2007,Major,137376.0,0.0
+2008,Major,223904.0,0.0
+2009,Major,163584.0,0.0
+2010,Major,130016.0,0.0
+2011,Major,126400.0,0.0
+2012,Major,133358.0,0.0
+2013,Major,124624.0,0.0
+2014,Major,100336.0,0.0
+2015,Major,81760.0,0.0
+2016,Major,79424.0,0.0
+2017,Major,72624.0,0.0
+2018,Major,125440.0,0.0
+2019,Major,75200.0,0.0
+2020,Major,0.0,0.0
+2021,Major,73965.0,0.0
+2022,Major,68380.0,0.0
+2023,Major,70891.0,0.0
+2024,Major,68855.0,0.0
+2025,Major,70565.0,0.0
+2003,McEwen D H,0.0,0.0
+2004,McEwen D H,1033800.0,0.0
+2005,McEwen D H,1073400.0,0.0
+2006,McEwen D H,0.0,0.0
+2007,McEwen D H,994200.0,0.0
+2008,McEwen D H,971400.0,0.0
+2009,McEwen D H,846600.0,0.0
+2010,McEwen D H,736200.0,0.0
+2011,McEwen D H,759000.0,0.0
+2012,McEwen D H,783600.0,0.0
+2013,McEwen D H,841200.0,0.0
+2014,McEwen D H,897600.0,0.0
+2015,McEwen D H,744600.0,0.0
+2016,McEwen D H,688200.0,0.0
+2017,McEwen D H,679200.0,0.0
+2018,McEwen D H,772800.0,0.0
+2019,McEwen D H,690600.0,0.0
+2020,McEwen D H,607200.0,0.0
+2021,McEwen D H,790200.0,0.0
+2022,McEwen D H,640800.0,0.0
+2023,McEwen D H,636600.0,0.0
+2024,McEwen D H,690000.0,0.0
+2025,McEwen D H,724800.0,0.0
+2003,Mcintosh,0.0,0.0
+2004,Mcintosh,190800.0,0.0
+2005,Mcintosh,168000.0,0.0
+2006,Mcintosh,0.0,0.0
+2007,Mcintosh,146480.0,0.0
+2008,Mcintosh,148312.0,0.0
+2009,Mcintosh,129544.0,0.0
+2010,Mcintosh,130176.0,0.0
+2011,Mcintosh,126461.888,0.0
+2012,Mcintosh,135680.0,0.0
+2013,Mcintosh,123760.0,0.0
+2014,Mcintosh,115360.0,0.0
+2015,Mcintosh,0.0,0.0
+2016,Mcintosh,83216.0,0.0
+2017,Mcintosh,82480.0,0.0
+2018,Mcintosh,73440.0,0.0
+2019,Mcintosh,87104.0,0.0
+2020,Mcintosh,72320.0,0.0
+2021,Mcintosh,73596.0,0.0
+2022,Mcintosh,76272.0,0.0
+2023,Mcintosh,76928.0,0.0
+2024,Mcintosh,81344.0,0.0
+2025,Mcintosh,91296.0,0.0
+2003,Milbank #1,0.0,0.0
+2004,Milbank #1,589200.0,0.0
+2005,Milbank #1,577200.0,0.0
+2006,Milbank #1,0.0,0.0
+2007,Milbank #1,590160.0,0.0
+2008,Milbank #1,527760.0,0.0
+2009,Milbank #1,487920.0,0.0
+2010,Milbank #1,458880.0,0.0
+2011,Milbank #1,480000.0,0.0
+2012,Milbank #1,462000.0,0.0
+2013,Milbank #1,512160.0,0.0
+2014,Milbank #1,483360.0,0.0
+2015,Milbank #1,515760.0,0.0
+2016,Milbank #1,436320.0,0.0
+2017,Milbank #1,527280.0,0.0
+2018,Milbank #1,547200.0,0.0
+2019,Milbank #1,580800.0,0.0
+2020,Milbank #1,429840.0,0.0
+2021,Milbank #1,535500.0,0.0
+2022,Milbank #1,542640.0,0.0
+2023,Milbank #1,522700.0,0.0
+2024,Milbank #1,524640.0,0.0
+2025,Milbank #1,564000.0,0.0
+2003,Milbank #2,0.0,0.0
+2004,Milbank #2,642960.0,0.0
+2005,Milbank #2,693800.0,0.0
+2006,Milbank #2,0.0,0.0
+2007,Milbank #2,633369.0,0.0
+2008,Milbank #2,583440.0,0.0
+2009,Milbank #2,558000.0,0.0
+2010,Milbank #2,542880.0,0.0
+2011,Milbank #2,515520.0,0.0
+2012,Milbank #2,490080.0,0.0
+2013,Milbank #2,561840.0,0.0
+2014,Milbank #2,532560.0,0.0
+2015,Milbank #2,642480.0,0.0
+2016,Milbank #2,521040.0,0.0
+2017,Milbank #2,535920.0,0.0
+2018,Milbank #2,614400.0,0.0
+2019,Milbank #2,658560.0,0.0
+2020,Milbank #2,510240.0,0.0
+2021,Milbank #2,584880.0,0.0
+2022,Milbank #2,610080.0,0.0
+2023,Milbank #2,582960.0,0.0
+2024,Milbank #2,588000.0,0.0
+2025,Milbank #2,623040.0,0.0
+2003,Minor Dorm,0.0,0.0
+2004,Minor Dorm,176880.0,0.0
+2005,Minor Dorm,182640.0,0.0
+2006,Minor Dorm,0.0,0.0
+2007,Minor Dorm,144464.0,0.0
+2008,Minor Dorm,179392.0,0.0
+2009,Minor Dorm,143953.0,0.0
+2010,Minor Dorm,129072.0,0.0
+2011,Minor Dorm,112684.0,0.0
+2012,Minor Dorm,111392.0,0.0
+2013,Minor Dorm,124852.0,0.0
+2014,Minor Dorm,125832.0,0.0
+2015,Minor Dorm,105192.0,0.0
+2016,Minor Dorm,68720.0,0.0
+2017,Minor Dorm,74272.0,0.0
+2018,Minor Dorm,134953.0,0.0
+2019,Minor Dorm,107512.0,0.0
+2020,Minor Dorm,67440.0,0.0
+2021,Minor Dorm,75776.0,0.0
+2022,Minor Dorm,99744.0,0.0
+2023,Minor Dorm,81472.0,0.0
+2024,Minor Dorm,80856.0,0.0
+2025,Minor Dorm,79696.0,0.0
+2003,Minor Theater (80),0.0,0.0
+2004,Minor Theater (80),43520.0,0.0
+2005,Minor Theater (80),34000.0,0.0
+2006,Minor Theater (80),0.0,0.0
+2007,Minor Theater (80),41924.0,0.0
+2008,Minor Theater (80),40560.0,0.0
+2009,Minor Theater (80),41120.0,0.0
+2010,Minor Theater (80),40720.0,0.0
+2011,Minor Theater (80),34400.0,0.0
+2012,Minor Theater (80),43760.0,0.0
+2013,Minor Theater (80),44640.0,0.0
+2014,Minor Theater (80),0.0,0.0
+2015,Minor Theater (80),0.0,0.0
+2016,Minor Theater (80),0.0,0.0
+2017,Minor Theater (80),0.0,0.0
+2018,Minor Theater (80),0.0,0.0
+2019,Minor Theater (80),0.0,0.0
+2003,North Court,0.0,0.0
+2004,North Court,33801.0,0.0
+2005,North Court,33865.0,0.0
+2006,North Court,0.0,0.0
+2007,North Court,26018.0,0.0
+2008,North Court,27210.0,13019.0
+2009,North Court,0.0,0.0
+2003,North Dorm,0.0,0.0
+2004,North Dorm,152340.0,0.0
+2005,North Dorm,158700.0,0.0
+2006,North Dorm,0.0,0.0
+2007,North Dorm,0.0,0.0
+2008,North Dorm,152520.0,0.0
+2009,North Dorm,145500.0,0.0
+2010,North Dorm,126780.0,0.0
+2011,North Dorm,136760.0,0.0
+2012,North Dorm,129060.0,0.0
+2013,North Dorm,123900.0,0.0
+2014,North Dorm,119820.0,0.0
+2015,North Dorm,121740.0,0.0
+2016,North Dorm,120420.0,0.0
+2017,North Dorm,121920.0,0.0
+2018,North Dorm,124200.0,0.0
+2019,North Dorm,124320.0,0.0
+2020,North Dorm,101760.0,0.0
+2021,North Dorm,164820.0,0.0
+2022,North Dorm,123300.0,0.0
+2023,North Dorm,119520.0,0.0
+2024,North Dorm,124260.0,0.0
+2025,North Dorm,122880.0,0.0
+2003,Old Chlorinator Hse.,0.0,0.0
+2004,Old Chlorinator Hse.,0.0,0.0
+2005,Old Chlorinator Hse.,17216.0,0.0
+2006,Old Chlorinator Hse.,0.0,0.0
+2007,Old Chlorinator Hse.,14797.0,0.0
+2008,Old Chlorinator Hse.,11155.0,0.0
+2009,Old Chlorinator Hse.,15159.0,0.0
+2010,Old Chlorinator Hse.,12440.0,0.0
+2011,Old Chlorinator Hse.,13569.0,0.0
+2012,Old Chlorinator Hse.,10519.0,0.0
+2013,Old Chlorinator Hse.,14108.0,0.0
+2014,Old Chlorinator Hse.,14969.0,0.0
+2015,Old Chlorinator Hse.,11499.0,0.0
+2016,Old Chlorinator Hse.,10617.0,0.0
+2017,Old Chlorinator Hse.,14103.0,0.0
+2018,Old Chlorinator Hse.,16691.0,0.0
+2019,Old Chlorinator Hse.,13344.0,0.0
+2020,Old Chlorinator Hse.,12766.0,3931020.0
+2021,Old Chlorinator Hse.,15540.0,0.0
+2022,Old Chlorinator Hse.,16592.0,0.0
+2023,Old Chlorinator Hse.,16607.0,0.0
+2024,Old Chlorinator Hse.,11947.0,0.0
+2025,Old Chlorinator Hse.,13062.0,0.0
+2003,Root Dorm,0.0,0.0
+2004,Root Dorm,272640.0,0.0
+2005,Root Dorm,274080.0,0.0
+2006,Root Dorm,0.0,0.0
+2007,Root Dorm,232800.0,0.0
+2008,Root Dorm,201600.0,0.0
+2009,Root Dorm,210720.2,0.0
+2010,Root Dorm,225360.0,0.0
+2011,Root Dorm,216600.0,0.0
+2012,Root Dorm,209520.0,0.0
+2013,Root Dorm,256080.0,0.0
+2014,Root Dorm,214800.0,0.0
+2015,Root Dorm,196879.2,0.0
+2016,Root Dorm,170640.0,0.0
+2017,Root Dorm,150000.0,0.0
+2018,Root Dorm,134400.0,0.0
+2019,Root Dorm,127290.0,0.0
+2020,Root Dorm,95600.0,0.0
+2021,Root Dorm,147840.0,0.0
+2022,Root Dorm,132000.0,0.0
+2023,Root Dorm,137040.0,0.0
+2024,Root Dorm,121440.0,0.0
+2025,Root Dorm,138960.0,0.0
+2003,Root Hall,0.0,0.0
+2004,Root Hall,23120.0,0.0
+2005,Root Hall,26960.0,0.0
+2006,Root Hall,0.0,0.0
+2007,Root Hall,24080.0,0.0
+2008,Root Hall,20800.0,0.0
+2009,Root Hall,14880.0,0.0
+2010,Root Hall,13680.0,0.0
+2011,Root Hall,14000.0,0.0
+2012,Root Hall,15840.0,0.0
+2013,Root Hall,14160.0,0.0
+2014,Root Hall,15520.0,0.0
+2015,Root Hall,23600.0,0.0
+2016,Root Hall,33360.0,0.0
+2017,Root Hall,33440.0,0.0
+2018,Root Hall,33200.0,0.0
+2019,Root Hall,31520.0,0.0
+2020,Root Hall,34680.0,0.0
+2021,Root Hall,27520.0,0.0
+2022,Root Hall,4800.0,0.0
+2023,Root Hall,0.0,0.0
+2024,Root Hall,109421.0,0.0
+2025,Root Hall,123210.0,0.0
+2010,Sadove Campus Center,0.0,0.0
+2011,Sadove Campus Center,567251.0,0.0
+2012,Sadove Campus Center,539511.0,0.0
+2013,Sadove Campus Center,613882.0,0.0
+2014,Sadove Campus Center,519844.0,0.0
+2015,Sadove Campus Center,610282.0,0.0
+2016,Sadove Campus Center,601481.0,0.0
+2017,Sadove Campus Center,621841.0,0.0
+2018,Sadove Campus Center,559776.0,0.0
+2019,Sadove Campus Center,680076.0,0.0
+2020,Sadove Campus Center,643061.0,0.0
+2021,Sadove Campus Center,784564.0,0.0
+2022,Sadove Campus Center,755714.0,0.0
+2023,Sadove Campus Center,754104.0,0.0
+2024,Sadove Campus Center,692608.0,0.0
+2025,Sadove Campus Center,681101.0,0.0
+2003,Sage Rink,0.0,0.0
+2004,Sage Rink,523320.0,0.0
+2005,Sage Rink,499685.0,0.0
+2006,Sage Rink,0.0,0.0
+2007,Sage Rink,634624.0,0.0
+2008,Sage Rink,488602.0,0.0
+2009,Sage Rink,466627.0,0.0
+2010,Sage Rink,423100.0,0.0
+2011,Sage Rink,376480.0,0.0
+2012,Sage Rink,349650.0,0.0
+2013,Sage Rink,400820.0,0.0
+2014,Sage Rink,0.0,0.0
+2015,Sage Rink,524175.0,0.0
+2016,Sage Rink,504849.0,0.0
+2017,Sage Rink,571973.0,0.0
+2018,Sage Rink,586658.0,0.0
+2019,Sage Rink,714420.0,0.0
+2020,Sage Rink,536935.0,0.0
+2021,Sage Rink,751231.0,0.0
+2022,Sage Rink,723275.0,0.0
+2023,Sage Rink,1032707.0,0.0
+2024,Sage Rink,1000042.0,0.0
+2025,Sage Rink,930742.0,0.0
+2003,Saunders Hse.,0.0,0.0
+2004,Saunders Hse.,0.0,0.0
+2005,Saunders Hse.,0.0,0.0
+2006,Saunders Hse.,0.0,0.0
+2007,Saunders Hse.,0.0,0.0
+2008,Saunders Hse.,0.0,0.0
+2009,Saunders Hse.,0.0,0.0
+2003,Schambach,0.0,0.0
+2004,Schambach,496500.0,0.0
+2005,Schambach,536000.0,0.0
+2006,Schambach,0.0,0.0
+2007,Schambach,453500.0,0.0
+2008,Schambach,404000.0,0.0
+2009,Schambach,376500.0,0.0
+2010,Schambach,351650.0,0.0
+2011,Schambach,404500.0,0.0
+2012,Schambach,429000.0,0.0
+2013,Schambach,434000.0,0.0
+2014,Schambach,347450.0,0.0
+2015,Schambach,379000.0,0.0
+2016,Schambach,355500.0,0.0
+2017,Schambach,351500.0,0.0
+2018,Schambach,397000.0,0.0
+2019,Schambach,369500.0,0.0
+2020,Schambach,281500.0,0.0
+2021,Schambach,372000.0,0.0
+2022,Schambach,372500.0,0.0
+2023,Schambach,368500.0,0.0
+2024,Schambach,383000.0,0.0
+2025,Schambach,363000.0,0.0
+2003,Science,0.0,0.0
+2004,Science Center,0.0,0.0
+2005,Science Center,0.0,0.0
+2006,Science Center,0.0,0.0
+2007,Science Center,6613000.0,0.0
+2008,Science Center,6521000.0,0.0
+2009,Science Center,6372000.0,0.0
+2010,Science Center,6402000.0,0.0
+2011,Science Center,5406000.0,0.0
+2012,Science Center,5103000.0,0.0
+2013,Science Center,4094000.0,0.0
+2014,Science Center,0.0,0.0
+2015,Science Center,0.0,0.0
+2016,Science Center,5961980.0,0.0
+2017,Science Center,4843766.93,0.0
+2018,Science Center,5974480.0,0.0
+2019,Science Center,5938045.0,0.0
+2020,Science Center,9415150.0,0.0
+2021,Science Facility,5680320.0,0.0
+2022,Science Facility,5516230.0,0.0
+2023,Science Facility,5897290.0,0.0
+2024,Science Facility,6142890.0,0.0
+2025,Science Facility,5421730.0,0.0
+2003,Solar Classroom,0.0,0.0
+2004,Solar Classroom,8545.0,0.0
+2005,Solar Classroom,9117.0,0.0
+2006,Solar Classroom,0.0,0.0
+2007,Solar Classroom,9126.0,0.0
+2008,Solar Classroom,11231.0,0.0
+2009,Solar Classroom,10508.0,0.0
+2010,Solar Classroom,8973.0,0.0
+2011,Solar Classroom,9790.0,0.0
+2012,Solar Classroom,8549.0,0.0
+2013,Solar Classroom,11509.0,0.0
+2014,Solar Classroom,8927.0,0.0
+2015,Solar Classroom,8211.0,0.0
+2016,Solar Classroom,28805.0,0.0
+2017,Solar Classroom,9873.0,0.0
+2018,Solar Classroom,10275.0,0.0
+2019,Solar Classroom,11647.0,0.0
+2020,Solar Classroom,11006.0,0.0
+2021,Solar Classroom,9725.0,0.0
+2022,Solar Classroom,10791.0,0.0
+2023,Solar Classroom,11397.0,0.0
+2024,Solar Classroom,11637.0,0.0
+2025,Solar Classroom,12455.0,0.0
+2003,South Dorm,0.0,0.0
+2004,South Dorm,0.0,0.0
+2005,South Dorm,0.0,0.0
+2006,South Dorm,0.0,0.0
+2007,South Dorm,0.0,0.0
+2008,South Dorm,0.0,0.0
+2009,South Dorm,0.0,0.0
+2010,South Dorm,0.0,0.0
+2011,South Dorm,0.0,0.0
+2012,South Dorm,0.0,0.0
+2013,South Dorm,0.0,0.0
+2014,South Dorm,0.0,0.0
+2015,South Dorm,0.0,0.0
+2016,South Dorm,0.0,0.0
+2017,South Dorm,0.0,0.0
+2018,South Dorm,0.0,0.0
+2019,South Dorm,0.0,0.0
+2003,Spencer House,0.0,0.0
+2004,Spencer House,101195.0,0.0
+2005,Spencer House,111710.0,0.0
+2006,Spencer House,0.0,0.0
+2007,Spencer House,111332.0,0.0
+2008,Spencer House,104974.0,0.0
+2009,Spencer House,111483.0,0.0
+2010,Spencer House,104932.0,0.0
+2011,Spencer House,97053.0,0.0
+2012,Spencer House,100923.0,0.0
+2013,Spencer House,89178.0,0.0
+2014,Spencer House,76058.0,0.0
+2015,Spencer House,0.0,0.0
+2016,Spencer House,73608.0,0.0
+2017,Spencer House,0.0,0.0
+2018,Spencer House,70584.0,0.0
+2019,Spencer House,74087.0,0.0
+2020,Spencer House,62166.0,0.0
+2021,Spencer House,57236.0,0.0
+2022,Spencer House,67379.0,0.0
+2023,Spencer House,67463.0,0.0
+2024,Spencer House,67865.0,0.0
+2025,Spencer House,66687.0,0.0
+2014,T S A,0.0,0.0
+2004,Wally J. (98 CHR),56592.0,0.0
+2006,Wally J. (98 CHR),0.0,0.0
+2007,Wally J. (98 CHR),42948.0,0.0
+2008,Wally J. (98 CHR),41758.0,0.0
+2009,Wally J. (98 CHR),38718.0,0.0
+2010,Wally J. (98 CHR),34776.0,0.0
+2011,Wally J. (98 CHR),33066.0,0.0
+2012,Wally J. (98 CHR),37512.0,0.0
+2013,Wally J. (98 CHR),34812.0,0.0
+2014,Wally J. (98 CHR),24218.0,0.0
+2015,Wally J. (98 CHR),23778.0,0.0
+2016,Wally J. (98 CHR),24138.0,0.0
+2017,Wally J. (98 CHR),23778.0,0.0
+2018,Wally J. (98 CHR),0.0,0.0
+2019,Wally J. (98 CHR),28674.0,0.0
+2020,Wally J. (98 CHR),26222.0,0.0
+2021,Wally J. (98 CHR),30612.0,0.0
+2022,Wally J. (98 CHR),33922.0,0.0
+2023,Wally J. (98 CHR),30417.0,0.0
+2024,Wally J. (98 CHR),28786.0,0.0
+2025,Wally J. (98 CHR),33831.0,0.0
+2005,Wally J.(98 CHR),52092.0,0.0
+2012,Wellin Art Museum,0.0,0.0
+2013,Wellin Art Museum,691033.692,0.0
+2014,Wellin Art Museum,891403.77,0.0
+2015,Wellin Art Museum,745869.71,0.0
+2016,Wellin Art Museum,796487.29,0.0
+2017,Wellin Art Museum,780644.67,0.0
+2018,Wellin Art Museum,777069.0,0.0
+2019,Wellin Art Museum,0.0,0.0
+2020,Wellin Art Museum,1088313.42,0.0
+2021,Wellin Art Museum,803345.6900000001,0.0
+2022,Wellin Art Museum,910077.25,0.0
+2023,Wellin Art Museum,865931.79,0.0
+2024,Wellin Art Museum,858336.84,0.0
+2025,Wellin Art Museum,0.0,0.0
+2005,Wertimer House,0.0,0.0
+2006,Wertimer House,0.0,0.0
+2007,Wertimer House,124107.2,0.0
+2008,Wertimer House,87463.8,0.0
+2009,Wertimer House,86478.8,0.0
+2010,Wertimer House,19185.0,0.0
+2011,Wertimer House,0.0,0.0
+2012,Wertimer House,0.0,0.0
+2013,Wertimer House,0.0,0.0
+2014,Wertimer House,0.0,0.0
+2015,Wertimer House,0.0,0.0
+2016,Wertimer House,88512.0,0.0
+2017,Wertimer House,92161.2,0.0
+2018,Wertimer House,95847.2,0.0
+2019,Wertimer House,82375.3,0.0
+2020,Wertimer House,50121.6,0.0
+2021,Wertimer House,81946.6,0.0
+2022,Wertimer House,87974.4,0.0
+2023,Wertimer House,88167.2,0.0
+2024,Wertimer House,152495.6,0.0
+2025,Wertimer House,90613.2,0.0
+2003,Woollcott,0.0,0.0
+2004,Woollcott,0.0,0.0
+2005,Woollcott,65666.0,0.0
+2006,Woollcott,0.0,0.0
+2007,Woollcott,38969.0,0.0
+2008,Woollcott,38329.0,0.0
+2009,Woollcott,43573.0,0.0
+2010,Woollcott,39565.0,0.0
+2011,Woollcott,42597.0,0.0
+2012,Woollcott,38414.0,0.0
+2013,Woollcott,48822.0,0.0
+2014,Woollcott,43804.0,0.0
+2015,Woollcott,50866.0,0.0
+2016,Woollcott,40458.0,0.0
+2017,Woollcott,41722.0,0.0
+2018,Woollcott,40918.0,0.0
+2019,Woollcott,44820.0,0.0
+2020,Woollcott,35333.0,0.0
+2021,Woollcott,42186.0,0.0
+2022,Woollcott,42089.0,0.0
+2023,Woollcott,47024.0,0.0
+2024,Woollcott,54548.0,0.0
+2025,Woollcott,48038.0,0.0

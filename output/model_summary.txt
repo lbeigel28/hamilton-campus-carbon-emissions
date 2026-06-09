@@ -1,0 +1,34 @@
+Hamilton College Carbon Emissions — Model Summary
+=======================================================
+
+Training data: 2014–2025
+Prediction window: 2026–2040
+
+── Model 1: Linear Regression ──
+  Slope     : +2.04 MT CO2 / year
+  Intercept : 1001.1
+  R²        : 0.0001
+  Interpretation: emissions are changing by +2.0 MT/yr on average
+
+── Model 2: Exponential Decay ──
+  Annual rate : +0.21% per year
+  R²          : 0.0034
+
+── Model 3: Scenario (policy levers) ──
+  Grid decarbonization by 2030 : 30%
+  Annual efficiency improvement: 1.0% / yr
+  Annual gas reduction          : 3.0% / yr
+
+── Emission Factors Used ──
+  Electricity: 0.000201 MT CO2 / kWh  (EPA eGRID 2022 NYUP)
+  Natural gas: 5.3e-05 MT CO2 / cu ft
+
+── Key Predictions (2030) ──
+  Linear model    : 5,150 MT CO2
+  Exponential     : 5,203 MT CO2
+  Scenario model  : 3,231 MT CO2
+
+── Key Predictions (2040) ──
+  Linear model    : 5,171 MT CO2
+  Exponential     : 5,313 MT CO2
+  Scenario model  : 2,872 MT CO2
