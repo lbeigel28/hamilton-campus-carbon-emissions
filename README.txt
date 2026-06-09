@@ -1,14 +1,11 @@
 Hamilton College — Carbon Emissions Prediction Project
-=======================================================
+=
 
 A step-by-step Python project that reads Hamilton College energy meter data,
 calculates CO2 emissions per building, forecasts future emissions using three
 models, and produces publication-quality charts.
 
-
-──────────────────────────────────────────────────────
 FOLDER STRUCTURE
-──────────────────────────────────────────────────────
 
 hamilton_carbon/
 │
@@ -40,58 +37,9 @@ hamilton_carbon/
         └── co2_by_use_type.png
 
 
-──────────────────────────────────────────────────────
-SETUP (one time only)
-──────────────────────────────────────────────────────
-
-1. Install Python 3.9 or later if you haven't already.
-   https://www.python.org/downloads/
-
-2. Open a terminal in VS Code  (Terminal → New Terminal).
-
-3. Install required packages:
-
-     pip install -r requirements.txt
-
-4. Copy your two spreadsheet files into this folder:
-     Hamilton_College_Electric___Gas_Meter_Log.xls
-     Sq_Foot_Hamilton_College_2023.xlsx
 
 
-──────────────────────────────────────────────────────
-HOW TO RUN
-──────────────────────────────────────────────────────
-
-Run each script in order from the terminal:
-
-     python step1_extract_data.py
-     python step2_calculate_emissions.py
-     python step3_predict.py
-     python step4_visualize.py
-
-Each script prints what it's doing and where it saved its outputs.
-You can re-run any step independently if you want to change settings.
-
-
-──────────────────────────────────────────────────────
-HOW TO CUSTOMIZE
-──────────────────────────────────────────────────────
-
-Change emission factors (step2_calculate_emissions.py, top of file):
-  ELEC_EF_MT_PER_KWH = 0.000201   ← swap in a different EPA eGRID value
-  GAS_EF_MT_PER_CUFT = 0.0000530
-
-Change forecast scenario (step3_predict.py, top of file):
-  SCENARIO = {
-      "grid_clean_by_2030":       0.30,   ← 30% cleaner NY grid by 2030
-      "annual_efficiency_pct":    0.01,   ← 1% less electricity/yr
-      "annual_gas_reduction_pct": 0.03,   ← 3% less gas/yr
-  }
-
-
-──────────────────────────────────────────────────────
 DATA SOURCES & METHODOLOGY
-──────────────────────────────────────────────────────
 
 Electricity emission factor:
   0.000201 MT CO2 / kWh
@@ -114,9 +62,7 @@ Forecasting models:
   3. Policy scenario     — forward simulation applying three independent levers
 
 
-──────────────────────────────────────────────────────
 NOTES ON THE RAW DATA
-──────────────────────────────────────────────────────
 
 - Gas data is present for some buildings (Gym, Dunham, Commons, C.A. Johnson,
   Buttrick) but not all.  Most buildings are electrically heated or gas data
