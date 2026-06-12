@@ -1,27 +1,11 @@
 """
 Calculate Carbon Emissions
 
-Reads the clean CSVs and applies EPA emission factors
-to calculate CO2 (metric tons) for each building and for the campus.
-
-Emission factors used:
-  Electricity : 0.000201 MT CO2/kWh
-                Source: EPA eGRID 2022, NYUP (New York Upstate) subregion
-                https://www.epa.gov/egrid
-
-  Natural gas : 0.0000530 MT CO2/cu ft
-                Source: EPA GHG emission factor for natural gas combustion
-                (53.06 kg CO2 / 1,000 cu ft × 0.001 to convert kg→MT)
-
-Input files (from output/ folder):
-  - buildings_energy.csv
-  - campus_totals.csv
-  - buildings_2023.csv
-
-Output files:
-  - buildings_emissions.csv   : CO2 added to per-building, per-year table
-  - campus_emissions.csv      : CO2 added to campus totals table
-  - buildings_2023_emissions.csv : 2023 snapshot with emissions + EUI
+Takes the cleaned CSVs and adds CO2 calculations using EPA factors.
+Outputs:
+- per-building emissions
+- campus-wide emissions
+- 2023 snapshot with emissions + EUI
 
 Run:
   python step2_calculate_emissions.py
@@ -31,11 +15,12 @@ import pandas as pd
 import numpy as np
 import os
 
-# Emission factors
-# Changeif you want to model a different grid or fuel type.
+# emission factors (EPA)
+# can tweak these later if we want a different region / assumptions
 
-ELEC_EF_MT_PER_KWH  = 0.000201   # MT CO2 per kWh  (NY grid, EPA eGRID 2022)
-GAS_EF_MT_PER_CUFT  = 0.0000530  # MT CO2 per cu ft of natural gas
+ELEC_EF_MT_PER_KWH  = 0.000201   # NY grid (eGRID 2022)
+GAS_EF_MT_PER_CUFT  = 0.0000530  # natural gas
+
 
 INPUT_DIR  = "output"
 OUTPUT_DIR = "output"
@@ -47,22 +32,18 @@ def load_csv(filename):
     return pd.read_csv(path)
 
 
-# calc functions
+# ---- emissions calculations ----
 
 def add_emissions(df):
-    """
-    Given a DataFrame with columns 'kwh' and 'gas_cuft',
-    adds three new columns:
-      elec_co2_mt  : CO2 from electricity  (metric tons)
-      gas_co2_mt   : CO2 from natural gas  (metric tons)
-      total_co2_mt : combined CO2          (metric tons)
-    """
+    # adds CO2 columns based on kwh + gas usage
+
     df = df.copy()
+
     df["elec_co2_mt"]  = df["kwh"]      * ELEC_EF_MT_PER_KWH
     df["gas_co2_mt"]   = df["gas_cuft"] * GAS_EF_MT_PER_CUFT
     df["total_co2_mt"] = df["elec_co2_mt"] + df["gas_co2_mt"]
 
-    # Round to 2 decimal places for readability
+    # rounding just to keep things readable
     df["elec_co2_mt"]  = df["elec_co2_mt"].round(2)
     df["gas_co2_mt"]   = df["gas_co2_mt"].round(2)
     df["total_co2_mt"] = df["total_co2_mt"].round(2)
@@ -71,24 +52,20 @@ def add_emissions(df):
 
 
 def add_eui(df):
-    """
-    Adds Energy Use Intensity (EUI) columns to the 2023 snapshot.
-    EUI = kBtu per square foot per year — a standard building efficiency metric.
+    # energy use intensity (kBtu / sqft)
+    # standard way to compare buildings of different sizes
 
-    Conversion: 1 kWh = 3.412 kBtu
-                1 cu ft natural gas ≈ 1.025 therms × 100 kBtu/therm = 102.5 kBtu
-                (the 1.025 multiplier matches the meter log notation)
-    """
-    KWH_TO_KBTU    = 3.412
-    CUFT_TO_KBTU   = 1.025 * 100  # ~102.5 kBtu per cu ft
+    KWH_TO_KBTU  = 3.412
+    CUFT_TO_KBTU = 1.025 * 100  # ~102.5 kBtu per cu ft
 
     df = df.copy()
+
     df["total_kbtu"] = (
-        df["kwh"]      * KWH_TO_KBTU  +
+        df["kwh"]      * KWH_TO_KBTU +
         df["gas_cuft"] * CUFT_TO_KBTU
     ).round(0)
 
-    # EUI only makes sense where we have a valid square footage
+    # only compute EUI if sqft exists and is valid
     df["eui_kbtu_per_sqft"] = np.where(
         df["sqft"].notna() & (df["sqft"] > 0),
         (df["total_kbtu"] / df["sqft"]).round(1),
@@ -99,24 +76,24 @@ def add_eui(df):
 
 
 def add_co2_per_sqft(df):
-    """
-    Adds CO2 intensity: MT CO2 per 1,000 sq ft.
-    Useful for comparing buildings of different sizes.
-    """
+    # CO2 intensity (scaled per 1,000 sqft so numbers are easier to read)
+
     df = df.copy()
+
     df["co2_per_1000sqft"] = np.where(
         df["sqft"].notna() & (df["sqft"] > 0),
         (df["total_co2_mt"] / df["sqft"] * 1000).round(3),
         np.nan
     )
+
     return df
 
 
-# MAIN
+# ---- main ----
 
 if __name__ == "__main__":
 
-    # load
+    # load inputs
     buildings_df  = load_csv("buildings_energy.csv")
     campus_df     = load_csv("campus_totals.csv")
     snapshot_2023 = load_csv("buildings_2023.csv")
@@ -125,14 +102,15 @@ if __name__ == "__main__":
     print(f"  Electricity : {ELEC_EF_MT_PER_KWH} MT CO2 / kWh")
     print(f"  Natural gas : {GAS_EF_MT_PER_CUFT} MT CO2 / cu ft")
 
-    # apply
-    buildings_emissions  = add_emissions(buildings_df)
-    campus_emissions     = add_emissions(campus_df)
-    snapshot_emissions   = add_emissions(snapshot_2023)
-    snapshot_emissions   = add_eui(snapshot_emissions)
-    snapshot_emissions   = add_co2_per_sqft(snapshot_emissions)
+    # apply calculations
+    buildings_emissions = add_emissions(buildings_df)
+    campus_emissions    = add_emissions(campus_df)
 
-    # save
+    snapshot_emissions  = add_emissions(snapshot_2023)
+    snapshot_emissions  = add_eui(snapshot_emissions)
+    snapshot_emissions  = add_co2_per_sqft(snapshot_emissions)
+
+    # save outputs
     out1 = os.path.join(OUTPUT_DIR, "buildings_emissions.csv")
     out2 = os.path.join(OUTPUT_DIR, "campus_emissions.csv")
     out3 = os.path.join(OUTPUT_DIR, "buildings_2023_emissions.csv")
@@ -145,8 +123,9 @@ if __name__ == "__main__":
     print(f"✓ Saved: {out2}")
     print(f"✓ Saved: {out3}")
 
-    # print
-    print("\n── Campus emissions by year (all years) ──")
+    # ---- quick outputs ----
+
+    print("\n── Campus emissions by year ──")
     display_cols = ["year", "kwh", "gas_cuft", "elec_co2_mt", "gas_co2_mt", "total_co2_mt"]
     print(campus_emissions[display_cols].to_string(index=False))
 
@@ -158,7 +137,7 @@ if __name__ == "__main__":
     )
     print(top10.to_string(index=False))
 
-    print("\n── 2023: Buildings with highest CO2 intensity (MT CO2 per 1,000 sqft) ──")
+    print("\n── 2023: highest CO2 intensity (per 1,000 sqft) ──")
     intensity = (
         snapshot_emissions
         .dropna(subset=["co2_per_1000sqft"])
@@ -167,8 +146,9 @@ if __name__ == "__main__":
     )
     print(intensity.to_string(index=False))
 
-    total_2023 = campus_emissions.loc[campus_emissions["year"] == 2023, "total_co2_mt"].values
+    total_2023 = campus_emissions.loc[
+        campus_emissions["year"] == 2023, "total_co2_mt"
+    ].values
+
     if len(total_2023):
         print(f"\n── 2023 campus total: {total_2023[0]:,.1f} MT CO2 ──")
-
-  
