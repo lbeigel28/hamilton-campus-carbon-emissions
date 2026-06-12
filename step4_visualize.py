@@ -1,14 +1,16 @@
 """
 Visualize
 
-Charts produced (all saved to output/charts/):
-  1. campus_trend.png          – historical campus CO2 by year
-  2. elec_vs_gas.png           – stacked area: electricity vs gas CO2
-  3. top_buildings_2023.png    – horizontal bar: top 15 buildings
-  4. building_breakdown.png    – pie chart: share of total CO2 by building
-  5. predictions.png           – historical + all 3 model forecasts
-  6. eui_distribution.png      – Energy Use Intensity across buildings
-  7. co2_by_use_type.png       – box plot of CO2 by building use type
+Creates charts and saves them to output/charts/.
+
+Charts:
+  - campus_trend.png
+  - elec_vs_gas.png
+  - top_buildings_2023.png
+  - building_breakdown.png
+  - predictions.png
+  - eui_distribution.png
+  - co2_by_use_type.png
 
 Run:
   python step4_visualize.py
@@ -24,12 +26,14 @@ INPUT_DIR  = "output"
 CHART_DIR  = os.path.join("output", "charts")
 os.makedirs(CHART_DIR, exist_ok=True)
 
+# color palette (kept simple + consistent across plots)
 BLUE   = "#3266AD"
 ORANGE = "#E07B39"
 GREEN  = "#3B9E60"
 GRAY   = "#888780"
 RED    = "#C0392B"
 
+# basic styling so everything looks consistent
 plt.rcParams.update({
     "figure.facecolor":  "white",
     "axes.facecolor":    "white",
@@ -57,21 +61,24 @@ def load(filename):
     return pd.read_csv(os.path.join(INPUT_DIR, filename))
 
 
-
-# Historical campus CO2 trend
+# ---- campus trend ----
 
 def chart_campus_trend(campus_df):
     df = campus_df.sort_values("year")
 
     fig, ax = plt.subplots(figsize=(11, 5))
 
-    ax.plot(df["year"], df["total_co2_mt"], color=BLUE, linewidth=2.5,
-            marker="o", markersize=5, label="Total CO₂ (MT)")
+    ax.plot(
+        df["year"], df["total_co2_mt"],
+        color=BLUE, linewidth=2.5,
+        marker="o", markersize=5,
+        label="Total CO₂ (MT)"
+    )
 
-    # Shade the region to show declining trend
+    # light fill just to make the trend easier to see
     ax.fill_between(df["year"], df["total_co2_mt"], alpha=0.12, color=BLUE)
 
-    # Annotate peak and most recent year
+    # highlight peak year
     peak_row = df.loc[df["total_co2_mt"].idxmax()]
     ax.annotate(
         f"Peak: {peak_row['total_co2_mt']:,.0f} MT\n({int(peak_row['year'])})",
@@ -80,6 +87,8 @@ def chart_campus_trend(campus_df):
         arrowprops=dict(arrowstyle="->", color=GRAY),
         fontsize=9, color=GRAY,
     )
+
+    # label most recent year
     last = df.iloc[-1]
     ax.annotate(
         f"{int(last['year'])}: {last['total_co2_mt']:,.0f} MT",
@@ -92,15 +101,17 @@ def chart_campus_trend(campus_df):
     ax.set_title("Hamilton College — Campus CO₂ Emissions (2004–2025)")
     ax.set_xlabel("Year")
     ax.set_ylabel("Metric Tons CO₂e")
+
     ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
     ax.set_xticks(df["year"])
     ax.tick_params(axis="x", rotation=45)
-    ax.legend()
 
+    ax.legend()
     plt.tight_layout()
     save("campus_trend.png")
 
-# Electricity vs gas CO2 stacked area
+
+# ---- electricity vs gas ----
 
 def chart_elec_vs_gas(campus_df):
     df = campus_df.sort_values("year")
@@ -119,30 +130,31 @@ def chart_elec_vs_gas(campus_df):
     ax.set_title("Campus CO₂ by Energy Source — Electricity vs. Natural Gas")
     ax.set_xlabel("Year")
     ax.set_ylabel("Metric Tons CO₂e")
+
     ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
     ax.set_xticks(df["year"])
     ax.tick_params(axis="x", rotation=45)
-    ax.legend(loc="upper left")
 
+    ax.legend(loc="upper left")
     plt.tight_layout()
     save("elec_vs_gas.png")
 
 
-
-# Top 15 buildings by 2023 CO2
-
+# ---- top buildings ----
 
 def chart_top_buildings(snapshot_df, n=15):
     df = snapshot_df.nlargest(n, "total_co2_mt").sort_values("total_co2_mt")
 
     fig, ax = plt.subplots(figsize=(10, n * 0.55 + 1.5))
 
-    bars_elec = ax.barh(df["building"], df["elec_co2_mt"], color=BLUE,
-                        label="Electricity CO₂", height=0.6)
-    bars_gas  = ax.barh(df["building"], df["gas_co2_mt"],  color=ORANGE,
-                        left=df["elec_co2_mt"], label="Natural Gas CO₂", height=0.6)
+    ax.barh(df["building"], df["elec_co2_mt"],
+            color=BLUE, label="Electricity CO₂", height=0.6)
 
-    # Label each bar with the total
+    ax.barh(df["building"], df["gas_co2_mt"],
+            left=df["elec_co2_mt"],
+            color=ORANGE, label="Natural Gas CO₂", height=0.6)
+
+    # label totals at the end of each bar
     for _, row in df.iterrows():
         ax.text(
             row["total_co2_mt"] + 5,
@@ -159,20 +171,24 @@ def chart_top_buildings(snapshot_df, n=15):
     save("top_buildings_2023.png")
 
 
-# Pie chart
+# ---- pie chart ----
 
 def chart_co2_pie(snapshot_df, n=8):
     df = snapshot_df[snapshot_df["total_co2_mt"] > 0].copy()
+
     top_n  = df.nlargest(n, "total_co2_mt")
     others = df["total_co2_mt"].sum() - top_n["total_co2_mt"].sum()
 
     labels = list(top_n["building"]) + ["All other buildings"]
     values = list(top_n["total_co2_mt"]) + [others]
 
-    colors = [BLUE, ORANGE, GREEN, "#7F77DD", "#D85A30", "#1D9E75",
-              "#BA7517", "#A32D2D", GRAY]
+    colors = [
+        BLUE, ORANGE, GREEN, "#7F77DD", "#D85A30",
+        "#1D9E75", "#BA7517", "#A32D2D", GRAY
+    ]
 
     fig, ax = plt.subplots(figsize=(9, 7))
+
     wedges, texts, autotexts = ax.pie(
         values,
         labels=labels,
@@ -182,6 +198,7 @@ def chart_co2_pie(snapshot_df, n=8):
         pctdistance=0.82,
         wedgeprops={"edgecolor": "white", "linewidth": 1.5},
     )
+
     for t in autotexts:
         t.set_fontsize(9)
 
@@ -190,8 +207,7 @@ def chart_co2_pie(snapshot_df, n=8):
     save("building_breakdown.png")
 
 
-
-# Predictions — historical + 3 forecast models
+# ---- predictions ----
 
 def chart_predictions(campus_df, pred_df):
     hist = campus_df.sort_values("year")
@@ -199,12 +215,15 @@ def chart_predictions(campus_df, pred_df):
 
     fig, ax = plt.subplots(figsize=(12, 6))
 
-    # Historical
-    ax.plot(hist["year"], hist["total_co2_mt"],
-            color=BLUE, linewidth=2.5, marker="o", markersize=4,
-            label="Historical (actual)", zorder=3)
+    # historical line
+    ax.plot(
+        hist["year"], hist["total_co2_mt"],
+        color=BLUE, linewidth=2.5,
+        marker="o", markersize=4,
+        label="Historical (actual)"
+    )
 
-    # Predictions — connect from last historical point
+    # connect forecasts to last real point
     last_yr  = hist["year"].max()
     last_co2 = float(hist.loc[hist["year"] == last_yr, "total_co2_mt"].values[0])
 
@@ -218,46 +237,50 @@ def chart_predictions(campus_df, pred_df):
     connect_and_plot(GREEN,  "scenario_co2_mt",    "Policy scenario",        "-")
     connect_and_plot(GRAY,   "exponential_co2_mt", "Exponential decay",     ":")
 
-    # Mark 2030 net-zero targets reference
-    ax.axhline(0, color="black", linewidth=0.8, linestyle="--", alpha=0.3)
-
-    # Shade forecast region
-    ax.axvspan(last_yr, pred["year"].max(), alpha=0.04, color=GRAY, label="_Forecast zone")
+    # light shading to separate forecast region
+    ax.axvspan(last_yr, pred["year"].max(), alpha=0.04, color=GRAY)
     ax.text(last_yr + 0.3, hist["total_co2_mt"].max() * 0.98,
             "← Historical   Forecast →", fontsize=9, color=GRAY)
 
     ax.set_title("Hamilton College — Carbon Emissions Forecast (2026–2040)")
     ax.set_xlabel("Year")
     ax.set_ylabel("Metric Tons CO₂e")
+
     ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
     all_years = sorted(list(hist["year"]) + list(pred["year"]))
     ax.set_xticks(all_years)
     ax.tick_params(axis="x", rotation=45)
-    ax.legend(loc="upper right")
 
+    ax.legend(loc="upper right")
     plt.tight_layout()
     save("predictions.png")
 
-# Energy Use Intensity distribution
 
+# ---- EUI ----
 
 def chart_eui(snapshot_df):
     df = snapshot_df.dropna(subset=["eui_kbtu_per_sqft"]).copy()
-    df = df[df["eui_kbtu_per_sqft"] > 0].sort_values("eui_kbtu_per_sqft", ascending=False)
+    df = df[df["eui_kbtu_per_sqft"] > 0]
 
-    # Truncate very long names
+    df = df.sort_values("eui_kbtu_per_sqft", ascending=False)
     df["short_name"] = df["building"].str.slice(0, 25)
 
     fig, ax = plt.subplots(figsize=(10, max(5, len(df) * 0.45 + 1.5)))
 
-    colors = [ORANGE if v > 300 else (BLUE if v > 150 else GREEN)
-              for v in df["eui_kbtu_per_sqft"]]
+    colors = [
+        ORANGE if v > 300 else (BLUE if v > 150 else GREEN)
+        for v in df["eui_kbtu_per_sqft"]
+    ]
 
-    bars = ax.barh(df["short_name"], df["eui_kbtu_per_sqft"], color=colors, height=0.6)
+    ax.barh(df["short_name"], df["eui_kbtu_per_sqft"],
+            color=colors, height=0.6)
 
-    # Reference line: ENERGY STAR median for higher education ~150 kBtu/sqft
-    ax.axvline(150, color=RED, linewidth=1.2, linestyle="--", alpha=0.7,
-               label="ENERGY STAR baseline ~150 kBtu/sqft/yr")
+    # rough benchmark line
+    ax.axvline(
+        150, color=RED, linewidth=1.2,
+        linestyle="--", alpha=0.7,
+        label="~150 kBtu/sqft baseline"
+    )
 
     ax.set_title("2023 Energy Use Intensity (EUI) by Building")
     ax.set_xlabel("kBtu / sq ft / year")
@@ -267,8 +290,7 @@ def chart_eui(snapshot_df):
     save("eui_distribution.png")
 
 
-# CO2 by building use type
-
+# ---- by use type ----
 
 def chart_by_use_type(snapshot_df):
     df = snapshot_df[snapshot_df["total_co2_mt"] > 0].copy()
@@ -283,26 +305,30 @@ def chart_by_use_type(snapshot_df):
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
-    # Left: total CO2 by use type
+    # total
     ax = axes[0]
     bars = ax.bar(grouped["use"], grouped["sum"], color=BLUE, alpha=0.85)
+
     ax.set_title("Total CO₂ by Building Use Type (2023)")
     ax.set_ylabel("Metric Tons CO₂e")
     ax.tick_params(axis="x", rotation=30)
     ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
+
     for bar in bars:
         ax.text(bar.get_x() + bar.get_width() / 2,
                 bar.get_height() + 5,
                 f"{bar.get_height():,.0f}",
                 ha="center", fontsize=8.5, color=GRAY)
 
-    # Right: average CO2 per building within each use type
+    # average
     ax2 = axes[1]
     bars2 = ax2.bar(grouped["use"], grouped["mean"], color=ORANGE, alpha=0.85)
+
     ax2.set_title("Average CO₂ per Building by Use Type (2023)")
-    ax2.set_ylabel("Avg Metric Tons CO₂e per Building")
+    ax2.set_ylabel("Avg MT CO₂ per Building")
     ax2.tick_params(axis="x", rotation=30)
     ax2.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
+
     for bar in bars2:
         ax2.text(bar.get_x() + bar.get_width() / 2,
                  bar.get_height() + 2,
@@ -314,7 +340,7 @@ def chart_by_use_type(snapshot_df):
     save("co2_by_use_type.png")
 
 
-# MAIN
+# ---- main ----
 
 if __name__ == "__main__":
 
