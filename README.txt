@@ -1,7 +1,7 @@
 Hamilton College — Carbon Emissions Prediction Project
 =
 
-A step-by-step Python project that reads Hamilton College energy meter data,
+A step-by-step  project that reads Hamilton College energy meter data,
 calculates CO2 emissions per building, forecasts future emissions using three
 models, and produces publication-quality charts.
 
@@ -9,8 +9,8 @@ FOLDER STRUCTURE
 
 hamilton_carbon/
 │
-├── Hamilton_College_Electric___Gas_Meter_Log.xls   ← put your data files here
-├── Sq_Foot_Hamilton_College_2023.xlsx               ← put your data files here
+├── Hamilton_College_Electric___Gas_Meter_Log.xls 
+├── Sq_Foot_Hamilton_College_2023.xlsx               
 │
 ├── step1_extract_data.py        reads raw spreadsheets → clean CSVs
 ├── step2_calculate_emissions.py applies emission factors → CO2 columns
