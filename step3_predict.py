@@ -73,7 +73,6 @@ def linear_regression_model(campus_df):
 
     return predictions.tolist(), slope, intercept, r2
 
-
 # ---- exponential decay ----
 
 def exponential_decay_model(campus_df):
