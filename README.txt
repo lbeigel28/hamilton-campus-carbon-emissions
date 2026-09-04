@@ -1,5 +1,5 @@
 Hamilton College — Carbon Emissions Prediction Project
-=
+
 
 A step-by-step  project that reads Hamilton College energy meter data,
 calculates CO2 emissions per building, forecasts future emissions using three
