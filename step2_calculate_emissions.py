@@ -15,9 +15,6 @@ import pandas as pd
 import numpy as np
 import os
 
-# emission factors (EPA)
-# can tweak these later if we want a different region / assumptions
-
 ELEC_EF_MT_PER_KWH  = 0.000201   # NY grid (eGRID 2022)
 GAS_EF_MT_PER_CUFT  = 0.0000530  # natural gas
 
