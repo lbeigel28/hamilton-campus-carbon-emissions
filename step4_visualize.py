@@ -139,7 +139,6 @@ def chart_elec_vs_gas(campus_df):
     plt.tight_layout()
     save("elec_vs_gas.png")
 
-
 # ---- top buildings ----
 
 def chart_top_buildings(snapshot_df, n=15):
